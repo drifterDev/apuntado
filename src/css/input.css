@@ -26,4 +26,8 @@
   .botones-pago{
     @apply w-72 h-16 seleccionable imagen;
   }
+
+  .botones-tienda{
+    @apply w-[150px] h-[150px] seleccionable imagen;
+  }
 }
