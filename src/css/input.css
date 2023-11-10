@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+  body{
+    font-family: 'Carter One'; 
+  }
+}
 
 @layer components{
   .fondo{
@@ -41,5 +49,33 @@
 
   .boton2-iniciar-sesion{
     @apply absolute top-4 w-[280px] h-[56px] imagen;
+  }
+
+  .entrada{
+    stroke-width: 4px;
+    stroke: #000;
+    background: white;
+    border-radius: 20px;
+    border: 5px solid black;
+    padding: 0px 10px;
+    opacity: 0.3; 
+    color: black;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .flecha-local{
+    @apply absolute left-96 bg-[url('../src/assets/general/flecha-2.png')] flecha;
+  }
+
+  .entrada-local{
+    @apply entrada w-[426px] h-[60px] mt-8;
+  }
+
+  .boton-perfil{
+    @apply mr-32 seleccionable imagen w-[369px] h-[60px];
   }
 }

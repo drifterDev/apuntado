@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
 /*
 ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
-*//*
+*/
+
+/*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
@@ -309,6 +313,7 @@ menu {
 /*
 Reset default styling for dialogs.
 */
+
 dialog {
   padding: 0;
 }
@@ -349,6 +354,7 @@ button,
 /*
 Make sure disabled buttons don't get the pointer cursor.
 */
+
 :disabled {
   cursor: default;
 }
@@ -382,11 +388,16 @@ video {
 }
 
 /* Make elements with the HTML hidden attribute stay hidden by default */
+
 [hidden] {
   display: none;
 }
 
-*, ::before, ::after {
+body{
+    font-family: 'Carter One'; 
+  }
+
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -436,7 +447,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -485,11 +496,11 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-.fondo {
+.fondo{
   background-size: cover;
   background-repeat: no-repeat;
 }
-.opcion-menu-1 {
+.opcion-menu-1{
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -497,31 +508,31 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.opcion-menu-1:hover {
+.opcion-menu-1:hover{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-.opcion-menu-1 {
+.opcion-menu-1{
   margin-top: 1rem;
   height: 3rem;
 }
-.imagen {
+.imagen{
   background-size: contain;
   background-repeat: no-repeat;
 }
-.seleccionable {
+.seleccionable{
   cursor: pointer;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.seleccionable:hover {
+.seleccionable:hover{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-.flecha {
+.flecha{
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -529,16 +540,16 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.flecha:hover {
+.flecha:hover{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-.flecha {
+.flecha{
   height: 66px;
   width: 66px;
 }
-.botones-pago {
+.botones-pago{
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -546,16 +557,16 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.botones-pago:hover {
+.botones-pago:hover{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-.botones-pago {
+.botones-pago{
   height: 4rem;
   width: 18rem;
 }
-.botones-tienda {
+.botones-tienda{
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -563,16 +574,16 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.botones-tienda:hover {
+.botones-tienda:hover{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-.botones-tienda {
+.botones-tienda{
   height: 150px;
   width: 150px;
 }
-.botones-tokens {
+.botones-tokens{
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -580,16 +591,16 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.botones-tokens:hover {
+.botones-tokens:hover{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-.botones-tokens {
+.botones-tokens{
   height: 299px;
   width: 421px;
 }
-.boton1-iniciar-sesion {
+.boton1-iniciar-sesion{
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -597,7 +608,7 @@ video {
   height: 65px;
   width: 319px;
 }
-.boton2-iniciar-sesion {
+.boton2-iniciar-sesion{
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -605,241 +616,396 @@ video {
   height: 56px;
   width: 280px;
 }
-.absolute {
+.entrada{
+    stroke-width: 4px;
+    stroke: #000;
+    background: white;
+    border-radius: 20px;
+    border: 5px solid black;
+    padding: 0px 10px;
+    opacity: 0.3; 
+    color: black;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+.flecha-local{
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.flecha-local:hover{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.flecha-local{
+  height: 66px;
+  width: 66px;
+  position: absolute;
+  left: 24rem;
+  background-image: url('../src/assets/general/flecha-2.png');
+}
+.entrada-local{
+    stroke-width: 4px;
+    stroke: #000;
+    background: white;
+    border-radius: 20px;
+    border: 5px solid black;
+    padding: 0px 10px;
+    opacity: 0.3; 
+    color: black;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    height: 60px;
+    width: 426px;
+  }
+.boton-perfil{
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.boton-perfil:hover{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.boton-perfil{
+  margin-right: 8rem;
+  height: 60px;
+  width: 369px;
+}
+.absolute{
   position: absolute;
 }
-.relative {
+.relative{
   position: relative;
 }
-.left-0 {
+.left-0{
   left: 0px;
 }
-.left-14 {
+.left-14{
   left: 3.5rem;
 }
-.left-3 {
+.left-3{
   left: 0.75rem;
 }
-.left-5 {
+.left-5{
   left: 1.25rem;
 }
-.right-0 {
+.right-0{
   right: 0px;
 }
-.right-14 {
+.right-14{
   right: 3.5rem;
 }
-.right-7 {
+.right-7{
   right: 1.75rem;
 }
-.top-48 {
+.top-48{
   top: 12rem;
 }
-.top-64 {
+.top-64{
   top: 16rem;
 }
-.top-72 {
+.top-72{
   top: 18rem;
 }
-.top-80 {
+.top-80{
   top: 20rem;
 }
-.top-\[430px\] {
+.top-\[155px\]{
+  top: 155px;
+}
+.top-\[250px\]{
+  top: 250px;
+}
+.top-\[345px\]{
+  top: 345px;
+}
+.top-\[380px\]{
+  top: 380px;
+}
+.top-\[430px\]{
   top: 430px;
 }
-.top-\[480px\] {
+.top-\[480px\]{
   top: 480px;
 }
-.m-10 {
+.top-\[500px\]{
+  top: 500px;
+}
+.top-\[520px\]{
+  top: 520px;
+}
+.m-10{
   margin: 2.5rem;
 }
-.mx-auto {
+.mx-auto{
   margin-left: auto;
   margin-right: auto;
 }
-.mt-3 {
+.ml-28{
+  margin-left: 7rem;
+}
+.ml-8{
+  margin-left: 2rem;
+}
+.mt-24{
+  margin-top: 6rem;
+}
+.mt-28{
+  margin-top: 7rem;
+}
+.mt-3{
   margin-top: 0.75rem;
 }
-.mt-36 {
+.mt-36{
   margin-top: 9rem;
 }
-.mt-64 {
+.mt-40{
+  margin-top: 10rem;
+}
+.mt-48{
+  margin-top: 12rem;
+}
+.mt-64{
   margin-top: 16rem;
 }
-.flex {
+.mt-72{
+  margin-top: 18rem;
+}
+.flex{
   display: flex;
 }
-.h-16 {
+.h-16{
   height: 4rem;
 }
-.h-32 {
+.h-32{
   height: 8rem;
 }
-.h-\[124px\] {
+.h-\[124px\]{
   height: 124px;
 }
-.h-\[49px\] {
+.h-\[49px\]{
   height: 49px;
 }
-.h-\[74px\] {
+.h-\[60px\]{
+  height: 60px;
+}
+.h-\[74px\]{
   height: 74px;
 }
-.w-\[124px\] {
+.w-64{
+  width: 16rem;
+}
+.w-\[1055px\]{
+  width: 1055px;
+}
+.w-\[124px\]{
   width: 124px;
 }
-.w-\[159px\] {
+.w-\[159px\]{
   width: 159px;
 }
-.w-\[172px\] {
+.w-\[172px\]{
   width: 172px;
 }
-.w-\[184px\] {
+.w-\[184px\]{
   width: 184px;
 }
-.w-\[258px\] {
+.w-\[219px\]{
+  width: 219px;
+}
+.w-\[258px\]{
   width: 258px;
 }
-.w-\[307px\] {
+.w-\[307px\]{
   width: 307px;
 }
-.w-\[373px\] {
+.w-\[364px\]{
+  width: 364px;
+}
+.w-\[373px\]{
   width: 373px;
 }
-.w-\[538px\] {
+.w-\[398px\]{
+  width: 398px;
+}
+.w-\[484px\]{
+  width: 484px;
+}
+.w-\[538px\]{
   width: 538px;
 }
-.w-\[580px\] {
+.w-\[580px\]{
   width: 580px;
 }
-.w-\[600px\] {
+.w-\[600px\]{
   width: 600px;
 }
-.w-\[700px\] {
+.w-\[700px\]{
   width: 700px;
 }
-.w-\[880px\] {
+.w-\[880px\]{
   width: 880px;
 }
-.flex-col {
+.flex-col{
   flex-direction: column;
 }
-.content-between {
+.content-between{
   align-content: space-between;
 }
-.items-center {
+.items-center{
   align-items: center;
 }
-.justify-between {
+.justify-start{
+  justify-content: flex-start;
+}
+.justify-between{
   justify-content: space-between;
 }
-.self-start {
+.self-start{
   align-self: flex-start;
 }
-.bg-\[url\(\'\.\.\/src\/assets\/advertencia\/background\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/advertencia\/background\.png\'\)\]{
   background-image: url('../src/assets/advertencia/background.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/compra-tokens\/background\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/compra-tokens\/background\.png\'\)\]{
   background-image: url('../src/assets/compra-tokens/background.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/compra-tokens\/paquete1\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/compra-tokens\/paquete1\.png\'\)\]{
   background-image: url('../src/assets/compra-tokens/paquete1.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/compra-tokens\/paquete2\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/compra-tokens\/paquete2\.png\'\)\]{
   background-image: url('../src/assets/compra-tokens/paquete2.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/compra-tokens\/paquete3\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/compra-tokens\/paquete3\.png\'\)\]{
   background-image: url('../src/assets/compra-tokens/paquete3.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/confirmacion\/background\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/confirmacion\/background\.png\'\)\]{
   background-image: url('../src/assets/confirmacion/background.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/confirmacion\/background2\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/confirmacion\/background2\.png\'\)\]{
   background-image: url('../src/assets/confirmacion/background2.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/confirmacion\/background3\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/confirmacion\/background3\.png\'\)\]{
   background-image: url('../src/assets/confirmacion/background3.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/confirmacion\/continuar\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/confirmacion\/continuar\.png\'\)\]{
   background-image: url('../src/assets/confirmacion/continuar.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/confirmacion\/volver\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/confirmacion\/volver\.png\'\)\]{
   background-image: url('../src/assets/confirmacion/volver.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/general\/flecha-1\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/general\/flecha-1\.png\'\)\]{
   background-image: url('../src/assets/general/flecha-1.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/general\/flecha-2\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/general\/flecha-2\.png\'\)\]{
   background-image: url('../src/assets/general/flecha-2.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/index\/ajustes\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/index\/ajustes\.png\'\)\]{
   background-image: url('../src/assets/index/ajustes.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/index\/local\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/index\/local\.png\'\)\]{
   background-image: url('../src/assets/index/local.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/index\/pantalla-principal\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/index\/pantalla-principal\.png\'\)\]{
   background-image: url('../src/assets/index/pantalla-principal.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/index\/perfil\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/index\/perfil\.png\'\)\]{
   background-image: url('../src/assets/index/perfil.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/index\/personalizar\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/index\/personalizar\.png\'\)\]{
   background-image: url('../src/assets/index/personalizar.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/index\/solitario\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/index\/solitario\.png\'\)\]{
   background-image: url('../src/assets/index/solitario.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/index\/tienda\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/index\/tienda\.png\'\)\]{
   background-image: url('../src/assets/index/tienda.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/index\/titulo\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/index\/titulo\.png\'\)\]{
   background-image: url('../src/assets/index/titulo.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/index\/tokens\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/index\/tokens\.png\'\)\]{
   background-image: url('../src/assets/index/tokens.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/iniciar-sesion\/background-1\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/iniciar-sesion\/background-1\.png\'\)\]{
   background-image: url('../src/assets/iniciar-sesion/background-1.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/iniciar-sesion\/crear-cuenta\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/iniciar-sesion\/background-2\.png\'\)\]{
+  background-image: url('../src/assets/iniciar-sesion/background-2.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/iniciar-sesion\/crear-cuenta\.png\'\)\]{
   background-image: url('../src/assets/iniciar-sesion/crear-cuenta.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/iniciar-sesion\/cuadro\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/iniciar-sesion\/cuadro\.png\'\)\]{
   background-image: url('../src/assets/iniciar-sesion/cuadro.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/iniciar-sesion\/iniciar-sesion\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/iniciar-sesion\/iniciar-sesion\.png\'\)\]{
   background-image: url('../src/assets/iniciar-sesion/iniciar-sesion.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/pago\/background\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/local\/background-1\.png\'\)\]{
+  background-image: url('../src/assets/local/background-1.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/local\/background-2\.png\'\)\]{
+  background-image: url('../src/assets/local/background-2.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/pago\/background\.png\'\)\]{
   background-image: url('../src/assets/pago/background.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/pantalla-final\/ganador-1\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/pantalla-final\/ganador-1\.png\'\)\]{
   background-image: url('../src/assets/pantalla-final/ganador-1.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/pantalla-final\/ganador-2\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/pantalla-final\/ganador-2\.png\'\)\]{
   background-image: url('../src/assets/pantalla-final/ganador-2.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/pantalla-final\/ganador-3\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/pantalla-final\/ganador-3\.png\'\)\]{
   background-image: url('../src/assets/pantalla-final/ganador-3.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/pantalla-final\/ganador-4\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/pantalla-final\/ganador-4\.png\'\)\]{
   background-image: url('../src/assets/pantalla-final/ganador-4.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/pantalla-final\/perdedor\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/pantalla-final\/perdedor\.png\'\)\]{
   background-image: url('../src/assets/pantalla-final/perdedor.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/publicidad\/background\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/publicidad\/background\.png\'\)\]{
   background-image: url('../src/assets/publicidad/background.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/publicidad\/boton\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/publicidad\/boton\.png\'\)\]{
   background-image: url('../src/assets/publicidad/boton.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/tienda\/background\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/registrarse\/background\.png\'\)\]{
+  background-image: url('../src/assets/registrarse/background.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/registrarse\/registrarse\.png\'\)\]{
+  background-image: url('../src/assets/registrarse/registrarse.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/tienda\/background\.png\'\)\]{
   background-image: url('../src/assets/tienda/background.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/tienda\/publicidad\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/tienda\/publicidad\.png\'\)\]{
   background-image: url('../src/assets/tienda/publicidad.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/tienda\/tokens\.png\'\)\] {
+.bg-\[url\(\'\.\.\/src\/assets\/tienda\/tokens\.png\'\)\]{
   background-image: url('../src/assets/tienda/tokens.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/registrarse\/background2\.png\'\)\]{
+  background-image: url('../src/assets/registrarse/background2.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/registrarse\/actualizar\.png\'\)\]{
+  background-image: url('../src/assets/registrarse/actualizar.png');
 }
