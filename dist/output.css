@@ -572,6 +572,39 @@ video {
   height: 150px;
   width: 150px;
 }
+.botones-tokens {
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.botones-tokens:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.botones-tokens {
+  height: 299px;
+  width: 421px;
+}
+.boton1-iniciar-sesion {
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  height: 65px;
+  width: 319px;
+}
+.boton2-iniciar-sesion {
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 1rem;
+  height: 56px;
+  width: 280px;
+}
 .absolute {
   position: absolute;
 }
@@ -584,6 +617,9 @@ video {
 .left-14 {
   left: 3.5rem;
 }
+.left-3 {
+  left: 0.75rem;
+}
 .left-5 {
   left: 1.25rem;
 }
@@ -593,17 +629,26 @@ video {
 .right-14 {
   right: 3.5rem;
 }
+.right-7 {
+  right: 1.75rem;
+}
+.top-48 {
+  top: 12rem;
+}
+.top-64 {
+  top: 16rem;
+}
 .top-72 {
   top: 18rem;
+}
+.top-80 {
+  top: 20rem;
 }
 .top-\[430px\] {
   top: 430px;
 }
 .top-\[480px\] {
   top: 480px;
-}
-.top-64 {
-  top: 16rem;
 }
 .m-10 {
   margin: 2.5rem;
@@ -663,11 +708,17 @@ video {
 .w-\[538px\] {
   width: 538px;
 }
+.w-\[580px\] {
+  width: 580px;
+}
 .w-\[600px\] {
   width: 600px;
 }
-.w-\[580px\] {
-  width: 580px;
+.w-\[700px\] {
+  width: 700px;
+}
+.w-\[880px\] {
+  width: 880px;
 }
 .flex-col {
   flex-direction: column;
@@ -681,11 +732,32 @@ video {
 .justify-between {
   justify-content: space-between;
 }
+.self-start {
+  align-self: flex-start;
+}
 .bg-\[url\(\'\.\.\/src\/assets\/advertencia\/background\.png\'\)\] {
   background-image: url('../src/assets/advertencia/background.png');
 }
+.bg-\[url\(\'\.\.\/src\/assets\/compra-tokens\/background\.png\'\)\] {
+  background-image: url('../src/assets/compra-tokens/background.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/compra-tokens\/paquete1\.png\'\)\] {
+  background-image: url('../src/assets/compra-tokens/paquete1.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/compra-tokens\/paquete2\.png\'\)\] {
+  background-image: url('../src/assets/compra-tokens/paquete2.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/compra-tokens\/paquete3\.png\'\)\] {
+  background-image: url('../src/assets/compra-tokens/paquete3.png');
+}
 .bg-\[url\(\'\.\.\/src\/assets\/confirmacion\/background\.png\'\)\] {
   background-image: url('../src/assets/confirmacion/background.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/confirmacion\/background2\.png\'\)\] {
+  background-image: url('../src/assets/confirmacion/background2.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/confirmacion\/background3\.png\'\)\] {
+  background-image: url('../src/assets/confirmacion/background3.png');
 }
 .bg-\[url\(\'\.\.\/src\/assets\/confirmacion\/continuar\.png\'\)\] {
   background-image: url('../src/assets/confirmacion/continuar.png');
@@ -726,6 +798,18 @@ video {
 .bg-\[url\(\'\.\.\/src\/assets\/index\/tokens\.png\'\)\] {
   background-image: url('../src/assets/index/tokens.png');
 }
+.bg-\[url\(\'\.\.\/src\/assets\/iniciar-sesion\/background-1\.png\'\)\] {
+  background-image: url('../src/assets/iniciar-sesion/background-1.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/iniciar-sesion\/crear-cuenta\.png\'\)\] {
+  background-image: url('../src/assets/iniciar-sesion/crear-cuenta.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/iniciar-sesion\/cuadro\.png\'\)\] {
+  background-image: url('../src/assets/iniciar-sesion/cuadro.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/iniciar-sesion\/iniciar-sesion\.png\'\)\] {
+  background-image: url('../src/assets/iniciar-sesion/iniciar-sesion.png');
+}
 .bg-\[url\(\'\.\.\/src\/assets\/pago\/background\.png\'\)\] {
   background-image: url('../src/assets/pago/background.png');
 }
@@ -734,6 +818,12 @@ video {
 }
 .bg-\[url\(\'\.\.\/src\/assets\/pantalla-final\/ganador-2\.png\'\)\] {
   background-image: url('../src/assets/pantalla-final/ganador-2.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/pantalla-final\/ganador-3\.png\'\)\] {
+  background-image: url('../src/assets/pantalla-final/ganador-3.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/pantalla-final\/ganador-4\.png\'\)\] {
+  background-image: url('../src/assets/pantalla-final/ganador-4.png');
 }
 .bg-\[url\(\'\.\.\/src\/assets\/pantalla-final\/perdedor\.png\'\)\] {
   background-image: url('../src/assets/pantalla-final/perdedor.png');
@@ -752,16 +842,4 @@ video {
 }
 .bg-\[url\(\'\.\.\/src\/assets\/tienda\/tokens\.png\'\)\] {
   background-image: url('../src/assets/tienda/tokens.png');
-}
-.bg-\[url\(\'\.\.\/src\/assets\/confirmacion\/background3\.png\'\)\] {
-  background-image: url('../src/assets/confirmacion/background3.png');
-}
-.bg-\[url\(\'\.\.\/src\/assets\/confirmacion\/background2\.png\'\)\] {
-  background-image: url('../src/assets/confirmacion/background2.png');
-}
-.bg-\[url\(\'\.\.\/src\/assets\/pantalla-final\/ganador-3\.png\'\)\] {
-  background-image: url('../src/assets/pantalla-final/ganador-3.png');
-}
-.bg-\[url\(\'\.\.\/src\/assets\/pantalla-final\/ganador-4\.png\'\)\] {
-  background-image: url('../src/assets/pantalla-final/ganador-4.png');
 }

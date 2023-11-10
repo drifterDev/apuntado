@@ -30,4 +30,16 @@
   .botones-tienda{
     @apply w-[150px] h-[150px] seleccionable imagen;
   }
+
+  .botones-tokens{
+    @apply w-[421px] h-[299px] seleccionable imagen;
+  }
+
+  .boton1-iniciar-sesion{
+    @apply absolute top-0 w-[319px] h-[65px] imagen;
+  }
+
+  .boton2-iniciar-sesion{
+    @apply absolute top-4 w-[280px] h-[56px] imagen;
+  }
 }
