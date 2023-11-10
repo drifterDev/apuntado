@@ -22,4 +22,8 @@
   .flecha{
     @apply w-[66px] h-[66px] imagen seleccionable;
   }
+
+  .botones-pago{
+    @apply w-72 h-16 seleccionable imagen;
+  }
 }
