@@ -78,4 +78,24 @@
   .boton-perfil{
     @apply mr-32 seleccionable imagen w-[369px] h-[60px];
   }
+
+  .input-radio{
+    @apply absolute top-0 z-20 opacity-0 cursor-pointer w-[60px] h-[60px];
+  }
+
+  .label-radio{
+    @apply transition-all absolute top-0 -z-10 w-[60px] h-[60px] bg-[#759948] border-black border-2 rounded-2xl flex items-center justify-center;
+  }
+
+  .input-radio2{
+    @apply absolute top-0 z-20 opacity-0 cursor-pointer w-[262px] h-[60px];
+  }
+
+  .label-radio2{
+    @apply transition-all absolute top-0 -z-10 w-[262px] h-[60px] bg-[#759948] border-black border-2 rounded-2xl flex items-center justify-center;
+  }
+
+  .centrar{
+    @apply right-0 left-0 mx-auto;
+  }
 }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apuntado</title>
+  <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body class="relative bg-[url('../src/assets/configuracion-partida/background.png')] fondo">
+  <div class="absolute top-[480px] right-14 bg-[url('../src/assets/general/flecha-2.png')] flecha"></div>
+  <div class="absolute top-[150px] centrar w-[594px] h-[377px] imagen bg-[url('../src/assets/configuracion-partida/titulos.png')]"></div>
+  <div class="flex flex-col items-center">
+    <div class="mt-64 relative w-full">
+      <div>
+        <input type="radio" checked name="jugadores" id="jugadores2" class="peer input-radio left-[450px]">
+        <div class="label-radio peer-hover:scale-110 peer-checked:bg-[#B1CA90] left-[450px]">
+          <p class="text-4xl">2</p>
+        </div>
+      </div>
+      <div>
+        <input type="radio" name="jugadores" id="jugadores3" class="peer input-radio centrar">
+        <div class="label-radio peer-hover:scale-110 peer-checked:bg-[#B1CA90] centrar">
+          <p class="text-4xl">3</p>
+        </div>
+      </div>
+      <div>
+        <input type="radio" name="jugadores" id="jugadores4" class="peer input-radio right-[450px]">
+        <div class="label-radio peer-hover:scale-110 peer-checked:bg-[#B1CA90] right-[450px]">
+          <p class="text-4xl">4</p>
+        </div>
+      </div>
+    </div>
+    <div class="mt-44 cursor-pointer seleccionable relative">
+      <div class="absolute top-0 centrar w-[50px] h-[50px] -z-10 imagen bg-[url('../src/assets/configuracion-partida/borde.png')]"></div>
+      <input type="checkbox" name="apuesta" id="apuesta" class="peer opacity-0 w-[50px] h-[50px] z-30">
+      <div class="hidden peer-checked:block absolute top-2 centrar -z-10 w-[40px] h-[40px] imagen bg-[url('../src/assets/configuracion-partida/check.png')]"></div>
+    </div>
+    <input type="number" placeholder="cantidad" min="0" max="100000" name="apuesta" id="cantidad" class="mt-4 entrada w-[320px] h-[60px] text-center">
+  </div>
+</body>
+</html>

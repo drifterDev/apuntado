@@ -687,6 +687,68 @@ body{
   height: 60px;
   width: 369px;
 }
+.input-radio{
+  position: absolute;
+  top: 0px;
+  z-index: 20;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  opacity: 0;
+}
+.label-radio{
+  position: absolute;
+  top: 0px;
+  z-index: -10;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(117 153 72 / var(--tw-bg-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.input-radio2{
+  position: absolute;
+  top: 0px;
+  z-index: 20;
+  height: 60px;
+  width: 262px;
+  cursor: pointer;
+  opacity: 0;
+}
+.label-radio2{
+  position: absolute;
+  top: 0px;
+  z-index: -10;
+  display: flex;
+  height: 60px;
+  width: 262px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(117 153 72 / var(--tw-bg-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.centrar{
+  right: 0px;
+  left: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .absolute{
   position: absolute;
 }
@@ -705,6 +767,9 @@ body{
 .left-5{
   left: 1.25rem;
 }
+.left-\[450px\]{
+  left: 450px;
+}
 .right-0{
   right: 0px;
 }
@@ -713,6 +778,15 @@ body{
 }
 .right-7{
   right: 1.75rem;
+}
+.right-\[450px\]{
+  right: 450px;
+}
+.top-0{
+  top: 0px;
+}
+.top-2{
+  top: 0.5rem;
 }
 .top-48{
   top: 12rem;
@@ -725,6 +799,9 @@ body{
 }
 .top-80{
   top: 20rem;
+}
+.top-\[150px\]{
+  top: 150px;
 }
 .top-\[155px\]{
   top: 155px;
@@ -749,6 +826,27 @@ body{
 }
 .top-\[520px\]{
   top: 520px;
+}
+.top-8{
+  top: 2rem;
+}
+.top-24{
+  top: 6rem;
+}
+.top-32{
+  top: 8rem;
+}
+.top-28{
+  top: 7rem;
+}
+.top-56{
+  top: 14rem;
+}
+.-z-10{
+  z-index: -10;
+}
+.z-30{
+  z-index: 30;
 }
 .m-10{
   margin: 2.5rem;
@@ -775,8 +873,14 @@ body{
 .mt-36{
   margin-top: 9rem;
 }
+.mt-4{
+  margin-top: 1rem;
+}
 .mt-40{
   margin-top: 10rem;
+}
+.mt-44{
+  margin-top: 11rem;
 }
 .mt-48{
   margin-top: 12rem;
@@ -787,8 +891,17 @@ body{
 .mt-72{
   margin-top: 18rem;
 }
+.mt-32{
+  margin-top: 8rem;
+}
+.mt-20{
+  margin-top: 5rem;
+}
 .flex{
   display: flex;
+}
+.hidden{
+  display: none;
 }
 .h-16{
   height: 4rem;
@@ -796,11 +909,23 @@ body{
 .h-32{
   height: 8rem;
 }
+.h-\[100px\]{
+  height: 100px;
+}
 .h-\[124px\]{
   height: 124px;
 }
+.h-\[377px\]{
+  height: 377px;
+}
+.h-\[40px\]{
+  height: 40px;
+}
 .h-\[49px\]{
   height: 49px;
+}
+.h-\[50px\]{
+  height: 50px;
 }
 .h-\[60px\]{
   height: 60px;
@@ -832,8 +957,14 @@ body{
 .w-\[258px\]{
   width: 258px;
 }
+.w-\[262px\]{
+  width: 262px;
+}
 .w-\[307px\]{
   width: 307px;
+}
+.w-\[320px\]{
+  width: 320px;
 }
 .w-\[364px\]{
   width: 364px;
@@ -844,14 +975,23 @@ body{
 .w-\[398px\]{
   width: 398px;
 }
+.w-\[40px\]{
+  width: 40px;
+}
 .w-\[484px\]{
   width: 484px;
+}
+.w-\[50px\]{
+  width: 50px;
 }
 .w-\[538px\]{
   width: 538px;
 }
 .w-\[580px\]{
   width: 580px;
+}
+.w-\[594px\]{
+  width: 594px;
 }
 .w-\[600px\]{
   width: 600px;
@@ -861,6 +1001,12 @@ body{
 }
 .w-\[880px\]{
   width: 880px;
+}
+.w-full{
+  width: 100%;
+}
+.cursor-pointer{
+  cursor: pointer;
 }
 .flex-col{
   flex-direction: column;
@@ -894,6 +1040,24 @@ body{
 }
 .bg-\[url\(\'\.\.\/src\/assets\/compra-tokens\/paquete3\.png\'\)\]{
   background-image: url('../src/assets/compra-tokens/paquete3.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/configuracion-bot\/background\.png\'\)\]{
+  background-image: url('../src/assets/configuracion-bot/background.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/configuracion-bot\/titulo\.png\'\)\]{
+  background-image: url('../src/assets/configuracion-bot/titulo.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/configuracion-partida\/background\.png\'\)\]{
+  background-image: url('../src/assets/configuracion-partida/background.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/configuracion-partida\/borde\.png\'\)\]{
+  background-image: url('../src/assets/configuracion-partida/borde.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/configuracion-partida\/check\.png\'\)\]{
+  background-image: url('../src/assets/configuracion-partida/check.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/configuracion-partida\/titulos\.png\'\)\]{
+  background-image: url('../src/assets/configuracion-partida/titulos.png');
 }
 .bg-\[url\(\'\.\.\/src\/assets\/confirmacion\/background\.png\'\)\]{
   background-image: url('../src/assets/confirmacion/background.png');
@@ -988,8 +1152,14 @@ body{
 .bg-\[url\(\'\.\.\/src\/assets\/publicidad\/boton\.png\'\)\]{
   background-image: url('../src/assets/publicidad/boton.png');
 }
+.bg-\[url\(\'\.\.\/src\/assets\/registrarse\/actualizar\.png\'\)\]{
+  background-image: url('../src/assets/registrarse/actualizar.png');
+}
 .bg-\[url\(\'\.\.\/src\/assets\/registrarse\/background\.png\'\)\]{
   background-image: url('../src/assets/registrarse/background.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/registrarse\/background2\.png\'\)\]{
+  background-image: url('../src/assets/registrarse/background2.png');
 }
 .bg-\[url\(\'\.\.\/src\/assets\/registrarse\/registrarse\.png\'\)\]{
   background-image: url('../src/assets/registrarse/registrarse.png');
@@ -1003,9 +1173,28 @@ body{
 .bg-\[url\(\'\.\.\/src\/assets\/tienda\/tokens\.png\'\)\]{
   background-image: url('../src/assets/tienda/tokens.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/registrarse\/background2\.png\'\)\]{
-  background-image: url('../src/assets/registrarse/background2.png');
+.text-center{
+  text-align: center;
 }
-.bg-\[url\(\'\.\.\/src\/assets\/registrarse\/actualizar\.png\'\)\]{
-  background-image: url('../src/assets/registrarse/actualizar.png');
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.opacity-0{
+  opacity: 0;
+}
+
+.peer:checked ~ .peer-checked\:block{
+  display: block;
+}
+
+.peer:checked ~ .peer-checked\:bg-\[\#B1CA90\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(177 202 144 / var(--tw-bg-opacity));
+}
+
+.peer:hover ~ .peer-hover\:scale-110{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
