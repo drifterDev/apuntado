@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .fondo{
+    @apply bg-cover bg-no-repeat;
+  }
+
+  .opcion-menu-1{
+    @apply mt-4 imagen h-12 seleccionable;
+  }
+
+  .imagen{
+    @apply bg-contain bg-no-repeat;
+  }
+
+  .seleccionable{
+    @apply hover:scale-110 cursor-pointer transition-all;
+  }
+
+  .flecha{
+    @apply w-[66px] h-[66px] imagen seleccionable;
+  }
+}

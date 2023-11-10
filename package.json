@@ -1,0 +1,29 @@
+{
+  "name": "apuntado",
+  "version": "1.0.0",
+  "description": "Entrega final de ingenieria de software",
+  "main": "index.js",
+  "scripts": {
+    "dev":"postcss ./src/css/input.css -o ./dist/output.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drifterDev/apuntado.git"
+  },
+  "keywords": [
+    "tailwind",
+    "javascript"
+  ],
+  "author": "Mateo Álvarez <maalvarezmu@unal.edu.co>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drifterDev/apuntado/issues"
+  },
+  "homepage": "https://github.com/drifterDev/apuntado#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "tailwindcss": "^3.3.5"
+  }
+}
