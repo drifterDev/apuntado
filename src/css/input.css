@@ -98,4 +98,8 @@
   .centrar{
     @apply right-0 left-0 mx-auto;
   }
+
+  .modelo{
+    @apply seleccionable cursor-pointer w-[160px] h-[120px] block;
+  }
 }

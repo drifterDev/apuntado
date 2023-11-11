@@ -749,6 +749,23 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
+.modelo{
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.modelo:hover{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.modelo{
+  display: block;
+  height: 120px;
+  width: 160px;
+  cursor: pointer;
+}
 .absolute{
   position: absolute;
 }
@@ -846,8 +863,14 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
+.ml-20{
+  margin-left: 5rem;
+}
 .ml-28{
   margin-left: 7rem;
+}
+.ml-36{
+  margin-left: 9rem;
 }
 .ml-8{
   margin-left: 2rem;
@@ -879,6 +902,9 @@ body{
 .mt-48{
   margin-top: 12rem;
 }
+.mt-52{
+  margin-top: 13rem;
+}
 .mt-64{
   margin-top: 16rem;
 }
@@ -887,6 +913,9 @@ body{
 }
 .flex{
   display: flex;
+}
+.grid{
+  display: grid;
 }
 .hidden{
   display: none;
@@ -902,6 +931,12 @@ body{
 }
 .h-\[124px\]{
   height: 124px;
+}
+.h-\[310px\]{
+  height: 310px;
+}
+.h-\[320px\]{
+  height: 320px;
 }
 .h-\[377px\]{
   height: 377px;
@@ -957,6 +992,9 @@ body{
 .w-\[373px\]{
   width: 373px;
 }
+.w-\[380px\]{
+  width: 380px;
+}
 .w-\[398px\]{
   width: 398px;
 }
@@ -981,6 +1019,9 @@ body{
 .w-\[600px\]{
   width: 600px;
 }
+.w-\[620px\]{
+  width: 620px;
+}
 .w-\[700px\]{
   width: 700px;
 }
@@ -992,6 +1033,9 @@ body{
 }
 .cursor-pointer{
   cursor: pointer;
+}
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .flex-col{
   flex-direction: column;
@@ -1008,8 +1052,31 @@ body{
 .justify-between{
   justify-content: space-between;
 }
+.gap-10{
+  gap: 2.5rem;
+}
 .self-start{
   align-self: flex-start;
+}
+.bg-blue-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+}
+.bg-green-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+}
+.bg-purple-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(192 132 252 / var(--tw-bg-opacity));
+}
+.bg-red-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+.bg-yellow-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 .bg-\[url\(\'\.\.\/src\/assets\/advertencia\/background\.png\'\)\]{
   background-image: url('../src/assets/advertencia/background.png');
@@ -1110,8 +1177,14 @@ body{
 .bg-\[url\(\'\.\.\/src\/assets\/local\/background-1\.png\'\)\]{
   background-image: url('../src/assets/local/background-1.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/local\/background-2\.png\'\)\]{
-  background-image: url('../src/assets/local/background-2.png');
+.bg-\[url\(\'\.\.\/src\/assets\/local\/background-j2\.png\'\)\]{
+  background-image: url('../src/assets/local/background-j2.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/local\/background-j3\.png\'\)\]{
+  background-image: url('../src/assets/local/background-j3.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/local\/background-j4\.png\'\)\]{
+  background-image: url('../src/assets/local/background-j4.png');
 }
 .bg-\[url\(\'\.\.\/src\/assets\/pago\/background\.png\'\)\]{
   background-image: url('../src/assets/pago/background.png');
@@ -1130,6 +1203,9 @@ body{
 }
 .bg-\[url\(\'\.\.\/src\/assets\/pantalla-final\/perdedor\.png\'\)\]{
   background-image: url('../src/assets/pantalla-final/perdedor.png');
+}
+.bg-\[url\(\'\.\.\/src\/assets\/personalizar\/background\.png\'\)\]{
+  background-image: url('../src/assets/personalizar/background.png');
 }
 .bg-\[url\(\'\.\.\/src\/assets\/publicidad\/background\.png\'\)\]{
   background-image: url('../src/assets/publicidad/background.png');
@@ -1158,14 +1234,9 @@ body{
 .bg-\[url\(\'\.\.\/src\/assets\/tienda\/tokens\.png\'\)\]{
   background-image: url('../src/assets/tienda/tokens.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/local\/background-j3\.png\'\)\]{
-  background-image: url('../src/assets/local/background-j3.png');
-}
-.bg-\[url\(\'\.\.\/src\/assets\/local\/background-j4\.png\'\)\]{
-  background-image: url('../src/assets/local/background-j4.png');
-}
-.bg-\[url\(\'\.\.\/src\/assets\/local\/background-j2\.png\'\)\]{
-  background-image: url('../src/assets/local/background-j2.png');
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .text-center{
   text-align: center;
