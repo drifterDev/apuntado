@@ -1,19 +1,12 @@
 const retroceder = document.getElementById('retroceder')
-const paquete1 = document.getElementById('paquete1')
-const paquete2 = document.getElementById('paquete2')
-const paquete3 = document.getElementById('paquete3')
+const paquetes = document.querySelectorAll('.botones-tokens')
 
-paquete1.addEventListener('click', () => {
-  window.location.href = 'confirmacion.html'
-})
-
-paquete2.addEventListener('click', () => {
-  window.location.href = 'confirmacion2.html'
-})
-
-paquete3.addEventListener('click', () => {
-  window.location.href = 'confirmacion3.html'
-})
+for (let paquete of paquetes) {
+  paquete.addEventListener('click', () => {
+    localStorage.setItem('tokens', `${paquete.id[7]}`)
+    window.location.href = 'confirmacion.html'
+  })
+}
 
 retroceder.addEventListener('click', () => {
   window.location.href = 'tienda.html'

@@ -13,5 +13,5 @@ avanzar.addEventListener('click', () => {
     value = 4
   }
   localStorage.setItem('jugadores', value)
-  window.location.href = `jugadores-${value}.html`
+  window.location.href = `jugadores.html`
 })

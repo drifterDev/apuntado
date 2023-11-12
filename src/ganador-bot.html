@@ -6,8 +6,13 @@
   <title>Apuntado</title>
   <link href="./css/output.css" rel="stylesheet">
 </head>
-<body class="relative bg-[url('../assets/pantalla-final/ganador-3.png')] fondo">
+<body class="relative fondo">
   <div id="avanzar" class="absolute top-[480px] right-14 bg-[url('../assets/general/flecha-2.png')] flecha"></div>
   <script src="./js/avanzar.js"></script>
+  <script>
+    const fondo = document.querySelector('.fondo');
+    const value = localStorage.getItem('bot') ?? 'maestro';
+    fondo.style.backgroundImage = `url('./assets/pantalla-final/ganador-${value}.png')`;
+  </script>
 </body>
 </html>

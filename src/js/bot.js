@@ -9,8 +9,7 @@ perder.addEventListener('click', () => {
 })
 
 ganar.addEventListener('click', () => {
-  let value = localStorage.getItem('bot') ?? '2'
-  window.location.href = `ganador-${value}.html`
+  window.location.href = `ganador-bot.html`
 })
 
 const color = localStorage.getItem('color') ?? 'red'

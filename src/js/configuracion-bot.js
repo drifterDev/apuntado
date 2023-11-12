@@ -5,11 +5,11 @@ const opcion3 = document.getElementById('jugadores4')
 
 avanzar.addEventListener('click', () => {
   if (opcion1.checked) {
-    localStorage.setItem('bot', '2')
+    localStorage.setItem('bot', 'novato')
   } else if (opcion2.checked) {
-    localStorage.setItem('bot', '3')
+    localStorage.setItem('bot', 'experto')
   } else {
-    localStorage.setItem('bot', '4')
+    localStorage.setItem('bot', 'maestro')
   }
-  window.location.href = `bot-${localStorage.getItem('bot')}.html`
+  window.location.href = `bot.html`
 })

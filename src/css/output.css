@@ -823,9 +823,6 @@ body{
 .right-14{
   right: 3.5rem;
 }
-.right-40{
-  right: 10rem;
-}
 .right-7{
   right: 1.75rem;
 }
@@ -1004,9 +1001,6 @@ body{
 .h-\[74px\]{
   height: 74px;
 }
-.h-\[78px\]{
-  height: 78px;
-}
 .w-64{
   width: 16rem;
 }
@@ -1129,14 +1123,6 @@ body{
   --tw-bg-opacity: 1;
   background-color: rgb(74 222 128 / var(--tw-bg-opacity));
 }
-.bg-purple-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(192 132 252 / var(--tw-bg-opacity));
-}
-.bg-red-200{
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
-}
 .bg-red-400{
   --tw-bg-opacity: 1;
   background-color: rgb(248 113 113 / var(--tw-bg-opacity));
@@ -1177,15 +1163,6 @@ body{
 }
 .bg-\[url\(\'\.\.\/assets\/configuracion-partida\/titulos\.png\'\)\]{
   background-image: url('../assets/configuracion-partida/titulos.png');
-}
-.bg-\[url\(\'\.\.\/assets\/confirmacion\/background\.png\'\)\]{
-  background-image: url('../assets/confirmacion/background.png');
-}
-.bg-\[url\(\'\.\.\/assets\/confirmacion\/background2\.png\'\)\]{
-  background-image: url('../assets/confirmacion/background2.png');
-}
-.bg-\[url\(\'\.\.\/assets\/confirmacion\/background3\.png\'\)\]{
-  background-image: url('../assets/confirmacion/background3.png');
 }
 .bg-\[url\(\'\.\.\/assets\/confirmacion\/continuar\.png\'\)\]{
   background-image: url('../assets/confirmacion/continuar.png');
@@ -1250,47 +1227,17 @@ body{
 .bg-\[url\(\'\.\.\/assets\/local\/background-j3\.png\'\)\]{
   background-image: url('../assets/local/background-j3.png');
 }
-.bg-\[url\(\'\.\.\/assets\/local\/background-j4\.png\'\)\]{
-  background-image: url('../assets/local/background-j4.png');
-}
 .bg-\[url\(\'\.\.\/assets\/pago\/background\.png\'\)\]{
   background-image: url('../assets/pago/background.png');
 }
-.bg-\[url\(\'\.\.\/assets\/pantalla-final\/ganador-1\.png\'\)\]{
-  background-image: url('../assets/pantalla-final/ganador-1.png');
-}
-.bg-\[url\(\'\.\.\/assets\/pantalla-final\/ganador-2\.png\'\)\]{
-  background-image: url('../assets/pantalla-final/ganador-2.png');
-}
-.bg-\[url\(\'\.\.\/assets\/pantalla-final\/ganador-3\.png\'\)\]{
-  background-image: url('../assets/pantalla-final/ganador-3.png');
-}
-.bg-\[url\(\'\.\.\/assets\/pantalla-final\/ganador-4\.png\'\)\]{
-  background-image: url('../assets/pantalla-final/ganador-4.png');
+.bg-\[url\(\'\.\.\/assets\/pantalla-final\/ganador-local\.png\'\)\]{
+  background-image: url('../assets/pantalla-final/ganador-local.png');
 }
 .bg-\[url\(\'\.\.\/assets\/pantalla-final\/perdedor\.png\'\)\]{
   background-image: url('../assets/pantalla-final/perdedor.png');
 }
 .bg-\[url\(\'\.\.\/assets\/partida\/background\.png\'\)\]{
   background-image: url('../assets/partida/background.png');
-}
-.bg-\[url\(\'\.\.\/assets\/partida\/bot-experto\.png\'\)\]{
-  background-image: url('../assets/partida/bot-experto.png');
-}
-.bg-\[url\(\'\.\.\/assets\/partida\/bot-maestro\.png\'\)\]{
-  background-image: url('../assets/partida/bot-maestro.png');
-}
-.bg-\[url\(\'\.\.\/assets\/partida\/bot-novato\.png\'\)\]{
-  background-image: url('../assets/partida/bot-novato.png');
-}
-.bg-\[url\(\'\.\.\/assets\/partida\/jugador-1\.png\'\)\]{
-  background-image: url('../assets/partida/jugador-1.png');
-}
-.bg-\[url\(\'\.\.\/assets\/partida\/jugador-2\.png\'\)\]{
-  background-image: url('../assets/partida/jugador-2.png');
-}
-.bg-\[url\(\'\.\.\/assets\/partida\/jugador-3\.png\'\)\]{
-  background-image: url('../assets/partida/jugador-3.png');
 }
 .bg-\[url\(\'\.\.\/assets\/partida\/pasar-turno\.png\'\)\]{
   background-image: url('../assets/partida/pasar-turno.png');
@@ -1322,11 +1269,11 @@ body{
 .bg-\[url\(\'\.\.\/assets\/tienda\/background\.png\'\)\]{
   background-image: url('../assets/tienda/background.png');
 }
-.bg-\[url\(\'\.\.\/assets\/tienda\/publicidad\.png\'\)\]{
-  background-image: url('../assets/tienda/publicidad.png');
+.bg-\[url\(\'\.\.\/assets\/tienda\/boton-1\.png\'\)\]{
+  background-image: url('../assets/tienda/boton-1.png');
 }
-.bg-\[url\(\'\.\.\/assets\/tienda\/tokens\.png\'\)\]{
-  background-image: url('../assets/tienda/tokens.png');
+.bg-\[url\(\'\.\.\/assets\/tienda\/boton-2\.png\'\)\]{
+  background-image: url('../assets/tienda/boton-2.png');
 }
 .object-cover{
   -o-object-fit: cover;

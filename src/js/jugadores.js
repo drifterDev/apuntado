@@ -1,8 +1,7 @@
 const avanzar = document.getElementById('avanzar')
 
 avanzar.addEventListener('click', () => {
-  let jugadores = localStorage.getItem('jugadores') ?? '2'
-  window.location.href = `partida-${jugadores}.html`
+  window.location.href = `partida.html`
 })
 
 const contrasenas = document.querySelectorAll('.flecha-local')
