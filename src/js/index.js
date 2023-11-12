@@ -6,6 +6,8 @@ const perfil = document.getElementById('perfil')
 const tokens = document.getElementById('tokens')
 const ajustes = document.getElementById('ajustes')
 
+console.log(localStorage.getItem('bot'))
+
 solitario.addEventListener('click', () => {
   window.location.href = 'configuracion-bot.html'
 })

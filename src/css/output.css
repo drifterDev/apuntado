@@ -772,6 +772,9 @@ body{
 .relative{
   position: relative;
 }
+.bottom-0{
+  bottom: 0px;
+}
 .left-0{
   left: 0px;
 }
@@ -790,6 +793,9 @@ body{
 .right-0{
   right: 0px;
 }
+.right-10{
+  right: 2.5rem;
+}
 .right-14{
   right: 3.5rem;
 }
@@ -801,6 +807,9 @@ body{
 }
 .top-0{
   top: 0px;
+}
+.top-16{
+  top: 4rem;
 }
 .top-2{
   top: 0.5rem;
@@ -849,6 +858,33 @@ body{
 }
 .top-\[520px\]{
   top: 520px;
+}
+.left-20{
+  left: 5rem;
+}
+.left-10{
+  left: 2.5rem;
+}
+.top-\[900px\]{
+  top: 900px;
+}
+.top-\[700px\]{
+  top: 700px;
+}
+.top-\[200px\]{
+  top: 200px;
+}
+.top-\[400px\]{
+  top: 400px;
+}
+.top-\[420px\]{
+  top: 420px;
+}
+.top-\[425px\]{
+  top: 425px;
+}
+.top-\[440px\]{
+  top: 440px;
 }
 .-z-10{
   z-index: -10;
@@ -932,6 +968,12 @@ body{
 .h-\[124px\]{
   height: 124px;
 }
+.h-\[220px\]{
+  height: 220px;
+}
+.h-\[240px\]{
+  height: 240px;
+}
 .h-\[310px\]{
   height: 310px;
 }
@@ -965,6 +1007,9 @@ body{
 .w-\[124px\]{
   width: 124px;
 }
+.w-\[155px\]{
+  width: 155px;
+}
 .w-\[159px\]{
   width: 159px;
 }
@@ -973,6 +1018,9 @@ body{
 }
 .w-\[184px\]{
   width: 184px;
+}
+.w-\[190px\]{
+  width: 190px;
 }
 .w-\[219px\]{
   width: 219px;
@@ -1022,14 +1070,23 @@ body{
 .w-\[620px\]{
   width: 620px;
 }
+.w-\[65px\]{
+  width: 65px;
+}
 .w-\[700px\]{
   width: 700px;
 }
 .w-\[880px\]{
   width: 880px;
 }
+.w-\[990px\]{
+  width: 990px;
+}
 .w-full{
   width: 100%;
+}
+.w-96{
+  width: 24rem;
 }
 .cursor-pointer{
   cursor: pointer;
@@ -1058,6 +1115,9 @@ body{
 .self-start{
   align-self: flex-start;
 }
+.overflow-hidden{
+  overflow: hidden;
+}
 .bg-blue-400{
   --tw-bg-opacity: 1;
   background-color: rgb(96 165 250 / var(--tw-bg-opacity));
@@ -1069,6 +1129,10 @@ body{
 .bg-purple-400{
   --tw-bg-opacity: 1;
   background-color: rgb(192 132 252 / var(--tw-bg-opacity));
+}
+.bg-red-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
 }
 .bg-red-400{
   --tw-bg-opacity: 1;
@@ -1204,6 +1268,15 @@ body{
 .bg-\[url\(\'\.\.\/assets\/pantalla-final\/perdedor\.png\'\)\]{
   background-image: url('../assets/pantalla-final/perdedor.png');
 }
+.bg-\[url\(\'\.\.\/assets\/partida\/bot-novato\.png\'\)\]{
+  background-image: url('../assets/partida/bot-novato.png');
+}
+.bg-\[url\(\'\.\.\/assets\/partida\/pasar-turno\.png\'\)\]{
+  background-image: url('../assets/partida/pasar-turno.png');
+}
+.bg-\[url\(\'\.\.\/assets\/partida\/tocar\.png\'\)\]{
+  background-image: url('../assets/partida/tocar.png');
+}
 .bg-\[url\(\'\.\.\/assets\/personalizar\/background\.png\'\)\]{
   background-image: url('../assets/personalizar/background.png');
 }
@@ -1234,9 +1307,18 @@ body{
 .bg-\[url\(\'\.\.\/assets\/tienda\/tokens\.png\'\)\]{
   background-image: url('../assets/tienda/tokens.png');
 }
+.bg-\[url\(\'\.\.\/assets\/partida\/bot-maestro\.png\'\)\]{
+  background-image: url('../assets/partida/bot-maestro.png');
+}
+.bg-\[url\(\'\.\.\/assets\/partida\/bot-experto\.png\'\)\]{
+  background-image: url('../assets/partida/bot-experto.png');
+}
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
+}
+.pt-20{
+  padding-top: 5rem;
 }
 .text-center{
   text-align: center;
