@@ -766,17 +766,44 @@ body{
   width: 160px;
   cursor: pointer;
 }
+.boton-partida{
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.boton-partida:hover{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.boton-partida{
+  position: absolute;
+  right: 2.5rem;
+  height: 220px;
+  width: 65px;
+}
+.jugadores-partida{
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 10rem;
+  height: 78px;
+  width: 398px;
+}
 .absolute{
   position: absolute;
 }
 .relative{
   position: relative;
 }
-.bottom-0{
-  bottom: 0px;
-}
 .left-0{
   left: 0px;
+}
+.left-10{
+  left: 2.5rem;
 }
 .left-14{
   left: 3.5rem;
@@ -793,11 +820,11 @@ body{
 .right-0{
   right: 0px;
 }
-.right-10{
-  right: 2.5rem;
-}
 .right-14{
   right: 3.5rem;
+}
+.right-40{
+  right: 10rem;
 }
 .right-7{
   right: 1.75rem;
@@ -808,6 +835,9 @@ body{
 .top-0{
   top: 0px;
 }
+.top-10{
+  top: 2.5rem;
+}
 .top-16{
   top: 4rem;
 }
@@ -816,6 +846,9 @@ body{
 }
 .top-28{
   top: 7rem;
+}
+.top-32{
+  top: 8rem;
 }
 .top-48{
   top: 12rem;
@@ -850,6 +883,9 @@ body{
 .top-\[430px\]{
   top: 430px;
 }
+.top-\[440px\]{
+  top: 440px;
+}
 .top-\[480px\]{
   top: 480px;
 }
@@ -858,33 +894,6 @@ body{
 }
 .top-\[520px\]{
   top: 520px;
-}
-.left-20{
-  left: 5rem;
-}
-.left-10{
-  left: 2.5rem;
-}
-.top-\[900px\]{
-  top: 900px;
-}
-.top-\[700px\]{
-  top: 700px;
-}
-.top-\[200px\]{
-  top: 200px;
-}
-.top-\[400px\]{
-  top: 400px;
-}
-.top-\[420px\]{
-  top: 420px;
-}
-.top-\[425px\]{
-  top: 425px;
-}
-.top-\[440px\]{
-  top: 440px;
 }
 .-z-10{
   z-index: -10;
@@ -968,9 +977,6 @@ body{
 .h-\[124px\]{
   height: 124px;
 }
-.h-\[220px\]{
-  height: 220px;
-}
 .h-\[240px\]{
   height: 240px;
 }
@@ -997,6 +1003,9 @@ body{
 }
 .h-\[74px\]{
   height: 74px;
+}
+.h-\[78px\]{
+  height: 78px;
 }
 .w-64{
   width: 16rem;
@@ -1070,9 +1079,6 @@ body{
 .w-\[620px\]{
   width: 620px;
 }
-.w-\[65px\]{
-  width: 65px;
-}
 .w-\[700px\]{
   width: 700px;
 }
@@ -1084,9 +1090,6 @@ body{
 }
 .w-full{
   width: 100%;
-}
-.w-96{
-  width: 24rem;
 }
 .cursor-pointer{
   cursor: pointer;
@@ -1268,8 +1271,26 @@ body{
 .bg-\[url\(\'\.\.\/assets\/pantalla-final\/perdedor\.png\'\)\]{
   background-image: url('../assets/pantalla-final/perdedor.png');
 }
+.bg-\[url\(\'\.\.\/assets\/partida\/background\.png\'\)\]{
+  background-image: url('../assets/partida/background.png');
+}
+.bg-\[url\(\'\.\.\/assets\/partida\/bot-experto\.png\'\)\]{
+  background-image: url('../assets/partida/bot-experto.png');
+}
+.bg-\[url\(\'\.\.\/assets\/partida\/bot-maestro\.png\'\)\]{
+  background-image: url('../assets/partida/bot-maestro.png');
+}
 .bg-\[url\(\'\.\.\/assets\/partida\/bot-novato\.png\'\)\]{
   background-image: url('../assets/partida/bot-novato.png');
+}
+.bg-\[url\(\'\.\.\/assets\/partida\/jugador-1\.png\'\)\]{
+  background-image: url('../assets/partida/jugador-1.png');
+}
+.bg-\[url\(\'\.\.\/assets\/partida\/jugador-2\.png\'\)\]{
+  background-image: url('../assets/partida/jugador-2.png');
+}
+.bg-\[url\(\'\.\.\/assets\/partida\/jugador-3\.png\'\)\]{
+  background-image: url('../assets/partida/jugador-3.png');
 }
 .bg-\[url\(\'\.\.\/assets\/partida\/pasar-turno\.png\'\)\]{
   background-image: url('../assets/partida/pasar-turno.png');
@@ -1306,12 +1327,6 @@ body{
 }
 .bg-\[url\(\'\.\.\/assets\/tienda\/tokens\.png\'\)\]{
   background-image: url('../assets/tienda/tokens.png');
-}
-.bg-\[url\(\'\.\.\/assets\/partida\/bot-maestro\.png\'\)\]{
-  background-image: url('../assets/partida/bot-maestro.png');
-}
-.bg-\[url\(\'\.\.\/assets\/partida\/bot-experto\.png\'\)\]{
-  background-image: url('../assets/partida/bot-experto.png');
 }
 .object-cover{
   -o-object-fit: cover;

@@ -102,4 +102,12 @@
   .modelo{
     @apply seleccionable cursor-pointer w-[160px] h-[120px] block;
   }
+
+  .boton-partida{
+    @apply imagen seleccionable absolute right-10 w-[65px] h-[220px];
+  }
+
+  .jugadores-partida{
+    @apply absolute right-40 imagen w-[398px] h-[78px];
+  }
 }

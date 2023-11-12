@@ -5,12 +5,11 @@ const mazo = document.getElementById('mazo')
 const sobrantes = document.getElementById('sobrantes')
 
 perder.addEventListener('click', () => {
-  window.location.href = 'perdedor.html'
+  window.location.href = 'ganador-1.html'
 })
 
 ganar.addEventListener('click', () => {
-  let value = localStorage.getItem('bot') ?? '2'
-  window.location.href = `ganador-${value}.html`
+  window.location.href = 'ganador-1.html'
 })
 
 const color = localStorage.getItem('color') ?? 'red'
