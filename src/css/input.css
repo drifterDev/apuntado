@@ -68,7 +68,7 @@
   }
 
   .flecha-local{
-    @apply absolute left-96 bg-[url('../src/assets/general/flecha-2.png')] flecha;
+    @apply absolute left-96 bg-[url('../assets/general/flecha-2.png')] flecha;
   }
 
   .entrada-local{

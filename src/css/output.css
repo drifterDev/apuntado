@@ -649,7 +649,7 @@ body{
   width: 66px;
   position: absolute;
   left: 24rem;
-  background-image: url('../src/assets/general/flecha-2.png');
+  background-image: url('../assets/general/flecha-2.png');
 }
 .entrada-local{
     stroke-width: 4px;
@@ -1078,161 +1078,161 @@ body{
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
-.bg-\[url\(\'\.\.\/src\/assets\/advertencia\/background\.png\'\)\]{
-  background-image: url('../src/assets/advertencia/background.png');
+.bg-\[url\(\'\.\.\/assets\/advertencia\/background\.png\'\)\]{
+  background-image: url('../assets/advertencia/background.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/compra-tokens\/background\.png\'\)\]{
-  background-image: url('../src/assets/compra-tokens/background.png');
+.bg-\[url\(\'\.\.\/assets\/compra-tokens\/background\.png\'\)\]{
+  background-image: url('../assets/compra-tokens/background.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/compra-tokens\/paquete1\.png\'\)\]{
-  background-image: url('../src/assets/compra-tokens/paquete1.png');
+.bg-\[url\(\'\.\.\/assets\/compra-tokens\/paquete1\.png\'\)\]{
+  background-image: url('../assets/compra-tokens/paquete1.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/compra-tokens\/paquete2\.png\'\)\]{
-  background-image: url('../src/assets/compra-tokens/paquete2.png');
+.bg-\[url\(\'\.\.\/assets\/compra-tokens\/paquete2\.png\'\)\]{
+  background-image: url('../assets/compra-tokens/paquete2.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/compra-tokens\/paquete3\.png\'\)\]{
-  background-image: url('../src/assets/compra-tokens/paquete3.png');
+.bg-\[url\(\'\.\.\/assets\/compra-tokens\/paquete3\.png\'\)\]{
+  background-image: url('../assets/compra-tokens/paquete3.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/configuracion-bot\/background\.png\'\)\]{
-  background-image: url('../src/assets/configuracion-bot/background.png');
+.bg-\[url\(\'\.\.\/assets\/configuracion-bot\/background\.png\'\)\]{
+  background-image: url('../assets/configuracion-bot/background.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/configuracion-bot\/titulo\.png\'\)\]{
-  background-image: url('../src/assets/configuracion-bot/titulo.png');
+.bg-\[url\(\'\.\.\/assets\/configuracion-bot\/titulo\.png\'\)\]{
+  background-image: url('../assets/configuracion-bot/titulo.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/configuracion-partida\/background\.png\'\)\]{
-  background-image: url('../src/assets/configuracion-partida/background.png');
+.bg-\[url\(\'\.\.\/assets\/configuracion-partida\/background\.png\'\)\]{
+  background-image: url('../assets/configuracion-partida/background.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/configuracion-partida\/borde\.png\'\)\]{
-  background-image: url('../src/assets/configuracion-partida/borde.png');
+.bg-\[url\(\'\.\.\/assets\/configuracion-partida\/borde\.png\'\)\]{
+  background-image: url('../assets/configuracion-partida/borde.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/configuracion-partida\/check\.png\'\)\]{
-  background-image: url('../src/assets/configuracion-partida/check.png');
+.bg-\[url\(\'\.\.\/assets\/configuracion-partida\/check\.png\'\)\]{
+  background-image: url('../assets/configuracion-partida/check.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/configuracion-partida\/titulos\.png\'\)\]{
-  background-image: url('../src/assets/configuracion-partida/titulos.png');
+.bg-\[url\(\'\.\.\/assets\/configuracion-partida\/titulos\.png\'\)\]{
+  background-image: url('../assets/configuracion-partida/titulos.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/confirmacion\/background\.png\'\)\]{
-  background-image: url('../src/assets/confirmacion/background.png');
+.bg-\[url\(\'\.\.\/assets\/confirmacion\/background\.png\'\)\]{
+  background-image: url('../assets/confirmacion/background.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/confirmacion\/background2\.png\'\)\]{
-  background-image: url('../src/assets/confirmacion/background2.png');
+.bg-\[url\(\'\.\.\/assets\/confirmacion\/background2\.png\'\)\]{
+  background-image: url('../assets/confirmacion/background2.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/confirmacion\/background3\.png\'\)\]{
-  background-image: url('../src/assets/confirmacion/background3.png');
+.bg-\[url\(\'\.\.\/assets\/confirmacion\/background3\.png\'\)\]{
+  background-image: url('../assets/confirmacion/background3.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/confirmacion\/continuar\.png\'\)\]{
-  background-image: url('../src/assets/confirmacion/continuar.png');
+.bg-\[url\(\'\.\.\/assets\/confirmacion\/continuar\.png\'\)\]{
+  background-image: url('../assets/confirmacion/continuar.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/confirmacion\/volver\.png\'\)\]{
-  background-image: url('../src/assets/confirmacion/volver.png');
+.bg-\[url\(\'\.\.\/assets\/confirmacion\/volver\.png\'\)\]{
+  background-image: url('../assets/confirmacion/volver.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/general\/flecha-1\.png\'\)\]{
-  background-image: url('../src/assets/general/flecha-1.png');
+.bg-\[url\(\'\.\.\/assets\/general\/flecha-1\.png\'\)\]{
+  background-image: url('../assets/general/flecha-1.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/general\/flecha-2\.png\'\)\]{
-  background-image: url('../src/assets/general/flecha-2.png');
+.bg-\[url\(\'\.\.\/assets\/general\/flecha-2\.png\'\)\]{
+  background-image: url('../assets/general/flecha-2.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/index\/ajustes\.png\'\)\]{
-  background-image: url('../src/assets/index/ajustes.png');
+.bg-\[url\(\'\.\.\/assets\/index\/ajustes\.png\'\)\]{
+  background-image: url('../assets/index/ajustes.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/index\/local\.png\'\)\]{
-  background-image: url('../src/assets/index/local.png');
+.bg-\[url\(\'\.\.\/assets\/index\/local\.png\'\)\]{
+  background-image: url('../assets/index/local.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/index\/pantalla-principal\.png\'\)\]{
-  background-image: url('../src/assets/index/pantalla-principal.png');
+.bg-\[url\(\'\.\.\/assets\/index\/pantalla-principal\.png\'\)\]{
+  background-image: url('../assets/index/pantalla-principal.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/index\/perfil\.png\'\)\]{
-  background-image: url('../src/assets/index/perfil.png');
+.bg-\[url\(\'\.\.\/assets\/index\/perfil\.png\'\)\]{
+  background-image: url('../assets/index/perfil.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/index\/personalizar\.png\'\)\]{
-  background-image: url('../src/assets/index/personalizar.png');
+.bg-\[url\(\'\.\.\/assets\/index\/personalizar\.png\'\)\]{
+  background-image: url('../assets/index/personalizar.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/index\/solitario\.png\'\)\]{
-  background-image: url('../src/assets/index/solitario.png');
+.bg-\[url\(\'\.\.\/assets\/index\/solitario\.png\'\)\]{
+  background-image: url('../assets/index/solitario.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/index\/tienda\.png\'\)\]{
-  background-image: url('../src/assets/index/tienda.png');
+.bg-\[url\(\'\.\.\/assets\/index\/tienda\.png\'\)\]{
+  background-image: url('../assets/index/tienda.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/index\/titulo\.png\'\)\]{
-  background-image: url('../src/assets/index/titulo.png');
+.bg-\[url\(\'\.\.\/assets\/index\/titulo\.png\'\)\]{
+  background-image: url('../assets/index/titulo.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/index\/tokens\.png\'\)\]{
-  background-image: url('../src/assets/index/tokens.png');
+.bg-\[url\(\'\.\.\/assets\/index\/tokens\.png\'\)\]{
+  background-image: url('../assets/index/tokens.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/iniciar-sesion\/background-1\.png\'\)\]{
-  background-image: url('../src/assets/iniciar-sesion/background-1.png');
+.bg-\[url\(\'\.\.\/assets\/iniciar-sesion\/background-1\.png\'\)\]{
+  background-image: url('../assets/iniciar-sesion/background-1.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/iniciar-sesion\/background-2\.png\'\)\]{
-  background-image: url('../src/assets/iniciar-sesion/background-2.png');
+.bg-\[url\(\'\.\.\/assets\/iniciar-sesion\/background-2\.png\'\)\]{
+  background-image: url('../assets/iniciar-sesion/background-2.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/iniciar-sesion\/crear-cuenta\.png\'\)\]{
-  background-image: url('../src/assets/iniciar-sesion/crear-cuenta.png');
+.bg-\[url\(\'\.\.\/assets\/iniciar-sesion\/crear-cuenta\.png\'\)\]{
+  background-image: url('../assets/iniciar-sesion/crear-cuenta.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/iniciar-sesion\/cuadro\.png\'\)\]{
-  background-image: url('../src/assets/iniciar-sesion/cuadro.png');
+.bg-\[url\(\'\.\.\/assets\/iniciar-sesion\/cuadro\.png\'\)\]{
+  background-image: url('../assets/iniciar-sesion/cuadro.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/iniciar-sesion\/iniciar-sesion\.png\'\)\]{
-  background-image: url('../src/assets/iniciar-sesion/iniciar-sesion.png');
+.bg-\[url\(\'\.\.\/assets\/iniciar-sesion\/iniciar-sesion\.png\'\)\]{
+  background-image: url('../assets/iniciar-sesion/iniciar-sesion.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/local\/background-1\.png\'\)\]{
-  background-image: url('../src/assets/local/background-1.png');
+.bg-\[url\(\'\.\.\/assets\/local\/background-1\.png\'\)\]{
+  background-image: url('../assets/local/background-1.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/local\/background-j2\.png\'\)\]{
-  background-image: url('../src/assets/local/background-j2.png');
+.bg-\[url\(\'\.\.\/assets\/local\/background-j2\.png\'\)\]{
+  background-image: url('../assets/local/background-j2.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/local\/background-j3\.png\'\)\]{
-  background-image: url('../src/assets/local/background-j3.png');
+.bg-\[url\(\'\.\.\/assets\/local\/background-j3\.png\'\)\]{
+  background-image: url('../assets/local/background-j3.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/local\/background-j4\.png\'\)\]{
-  background-image: url('../src/assets/local/background-j4.png');
+.bg-\[url\(\'\.\.\/assets\/local\/background-j4\.png\'\)\]{
+  background-image: url('../assets/local/background-j4.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/pago\/background\.png\'\)\]{
-  background-image: url('../src/assets/pago/background.png');
+.bg-\[url\(\'\.\.\/assets\/pago\/background\.png\'\)\]{
+  background-image: url('../assets/pago/background.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/pantalla-final\/ganador-1\.png\'\)\]{
-  background-image: url('../src/assets/pantalla-final/ganador-1.png');
+.bg-\[url\(\'\.\.\/assets\/pantalla-final\/ganador-1\.png\'\)\]{
+  background-image: url('../assets/pantalla-final/ganador-1.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/pantalla-final\/ganador-2\.png\'\)\]{
-  background-image: url('../src/assets/pantalla-final/ganador-2.png');
+.bg-\[url\(\'\.\.\/assets\/pantalla-final\/ganador-2\.png\'\)\]{
+  background-image: url('../assets/pantalla-final/ganador-2.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/pantalla-final\/ganador-3\.png\'\)\]{
-  background-image: url('../src/assets/pantalla-final/ganador-3.png');
+.bg-\[url\(\'\.\.\/assets\/pantalla-final\/ganador-3\.png\'\)\]{
+  background-image: url('../assets/pantalla-final/ganador-3.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/pantalla-final\/ganador-4\.png\'\)\]{
-  background-image: url('../src/assets/pantalla-final/ganador-4.png');
+.bg-\[url\(\'\.\.\/assets\/pantalla-final\/ganador-4\.png\'\)\]{
+  background-image: url('../assets/pantalla-final/ganador-4.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/pantalla-final\/perdedor\.png\'\)\]{
-  background-image: url('../src/assets/pantalla-final/perdedor.png');
+.bg-\[url\(\'\.\.\/assets\/pantalla-final\/perdedor\.png\'\)\]{
+  background-image: url('../assets/pantalla-final/perdedor.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/personalizar\/background\.png\'\)\]{
-  background-image: url('../src/assets/personalizar/background.png');
+.bg-\[url\(\'\.\.\/assets\/personalizar\/background\.png\'\)\]{
+  background-image: url('../assets/personalizar/background.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/publicidad\/background\.png\'\)\]{
-  background-image: url('../src/assets/publicidad/background.png');
+.bg-\[url\(\'\.\.\/assets\/publicidad\/background\.png\'\)\]{
+  background-image: url('../assets/publicidad/background.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/publicidad\/boton\.png\'\)\]{
-  background-image: url('../src/assets/publicidad/boton.png');
+.bg-\[url\(\'\.\.\/assets\/publicidad\/boton\.png\'\)\]{
+  background-image: url('../assets/publicidad/boton.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/registrarse\/actualizar\.png\'\)\]{
-  background-image: url('../src/assets/registrarse/actualizar.png');
+.bg-\[url\(\'\.\.\/assets\/registrarse\/actualizar\.png\'\)\]{
+  background-image: url('../assets/registrarse/actualizar.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/registrarse\/background\.png\'\)\]{
-  background-image: url('../src/assets/registrarse/background.png');
+.bg-\[url\(\'\.\.\/assets\/registrarse\/background\.png\'\)\]{
+  background-image: url('../assets/registrarse/background.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/registrarse\/background2\.png\'\)\]{
-  background-image: url('../src/assets/registrarse/background2.png');
+.bg-\[url\(\'\.\.\/assets\/registrarse\/background2\.png\'\)\]{
+  background-image: url('../assets/registrarse/background2.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/registrarse\/registrarse\.png\'\)\]{
-  background-image: url('../src/assets/registrarse/registrarse.png');
+.bg-\[url\(\'\.\.\/assets\/registrarse\/registrarse\.png\'\)\]{
+  background-image: url('../assets/registrarse/registrarse.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/tienda\/background\.png\'\)\]{
-  background-image: url('../src/assets/tienda/background.png');
+.bg-\[url\(\'\.\.\/assets\/tienda\/background\.png\'\)\]{
+  background-image: url('../assets/tienda/background.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/tienda\/publicidad\.png\'\)\]{
-  background-image: url('../src/assets/tienda/publicidad.png');
+.bg-\[url\(\'\.\.\/assets\/tienda\/publicidad\.png\'\)\]{
+  background-image: url('../assets/tienda/publicidad.png');
 }
-.bg-\[url\(\'\.\.\/src\/assets\/tienda\/tokens\.png\'\)\]{
-  background-image: url('../src/assets/tienda/tokens.png');
+.bg-\[url\(\'\.\.\/assets\/tienda\/tokens\.png\'\)\]{
+  background-image: url('../assets/tienda/tokens.png');
 }
 .object-cover{
   -o-object-fit: cover;
@@ -1248,13 +1248,16 @@ body{
 .opacity-0{
   opacity: 0;
 }
+
 .peer:checked ~ .peer-checked\:block{
   display: block;
 }
+
 .peer:checked ~ .peer-checked\:bg-\[\#B1CA90\]{
   --tw-bg-opacity: 1;
   background-color: rgb(177 202 144 / var(--tw-bg-opacity));
 }
+
 .peer:hover ~ .peer-hover\:scale-110{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;

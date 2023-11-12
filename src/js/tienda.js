@@ -6,13 +6,13 @@ comprar.addEventListener('click', () => {
   window.location.href = 'compra-tokens.html'
 })
 
-console.log(localStorage.getItem('publicidad'))
-
 publicidad.addEventListener('click', () => {
   const value = localStorage.getItem('publicidad')
-  if (value === 1) {
+  if (value === 'true') {
+    localStorage.setItem('publicidad', 'false')
     window.location.href = 'publicidad.html'
   } else {
+    localStorage.setItem('publicidad', 'true')
     window.location.href = 'advertencia.html'
   }
 })
