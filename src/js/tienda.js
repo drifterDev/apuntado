@@ -6,9 +6,11 @@ comprar.addEventListener('click', () => {
   window.location.href = 'compra-tokens.html'
 })
 
+console.log(localStorage.getItem('publicidad'))
+
 publicidad.addEventListener('click', () => {
-  const random = Math.floor(Math.random() * 2)
-  if (random === 0) {
+  const value = localStorage.getItem('publicidad')
+  if (value === 1) {
     window.location.href = 'publicidad.html'
   } else {
     window.location.href = 'advertencia.html'

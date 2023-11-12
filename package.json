@@ -4,7 +4,7 @@
   "description": "Entrega final de ingenieria de software",
   "main": "index.js",
   "scripts": {
-    "dev":"postcss ./src/css/input.css -o ./dist/output.css -w"
+    "dev":"postcss ./src/css/input.css -o ./src/css/output.css -w"
   },
   "repository": {
     "type": "git",

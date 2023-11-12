@@ -16,5 +16,5 @@ paquete3.addEventListener('click', () => {
 })
 
 retroceder.addEventListener('click', () => {
-  window.location.href = 'index.html'
+  window.location.href = 'tienda.html'
 })

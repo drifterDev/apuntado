@@ -13,5 +13,6 @@ avanzar.addEventListener('click', () => {
     value = 4
   }
   localStorage.setItem('jugadores', value)
+  console.log(localStorage.getItem('jugadores'))
   window.location.href = `jugadores-${value}.html`
 })

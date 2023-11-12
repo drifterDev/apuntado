@@ -1248,16 +1248,13 @@ body{
 .opacity-0{
   opacity: 0;
 }
-
 .peer:checked ~ .peer-checked\:block{
   display: block;
 }
-
 .peer:checked ~ .peer-checked\:bg-\[\#B1CA90\]{
   --tw-bg-opacity: 1;
   background-color: rgb(177 202 144 / var(--tw-bg-opacity));
 }
-
 .peer:hover ~ .peer-hover\:scale-110{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;

@@ -11,7 +11,9 @@ const contrasenas = [
   document.getElementById('contrasena-4')
 ]
 
-for (let i = 0; i < contrasenas.length; i++) {
+console.log(localStorage.getItem('jugadores'))
+
+for (let i = 0; i < localStorage.getItem('jugadores')-1; i++) {
   contrasenas[i].addEventListener('click', () => {
     window.location.href = 'contrasena.html'
   })
