@@ -100,7 +100,7 @@
   }
 
   .modelo{
-    @apply seleccionable cursor-pointer w-[160px] h-[120px] block;
+    @apply seleccionable cursor-pointer w-[160px] h-[120px] block imagen;
   }
 
   .boton-partida{
@@ -109,5 +109,9 @@
 
   .jugadores-partida{
     @apply absolute right-40 imagen w-[398px] h-[78px];
+  }
+
+  .mazo-sobra{
+    @apply h-[240px] imagen seleccionable;
   }
 }

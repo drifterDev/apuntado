@@ -750,6 +750,8 @@ body{
   margin-right: auto;
 }
 .modelo{
+  background-size: contain;
+  background-repeat: no-repeat;
   cursor: pointer;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -792,6 +794,22 @@ body{
   right: 10rem;
   height: 78px;
   width: 398px;
+}
+.mazo-sobra{
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.mazo-sobra:hover{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.mazo-sobra{
+  height: 240px;
 }
 .absolute{
   position: absolute;
@@ -1115,22 +1133,6 @@ body{
 .overflow-hidden{
   overflow: hidden;
 }
-.bg-blue-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
-}
-.bg-green-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
-}
-.bg-red-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
-}
-.bg-yellow-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
-}
 .bg-\[url\(\'\.\.\/assets\/advertencia\/background\.png\'\)\]{
   background-image: url('../assets/advertencia/background.png');
 }
@@ -1221,12 +1223,6 @@ body{
 .bg-\[url\(\'\.\.\/assets\/local\/background-1\.png\'\)\]{
   background-image: url('../assets/local/background-1.png');
 }
-.bg-\[url\(\'\.\.\/assets\/local\/background-j2\.png\'\)\]{
-  background-image: url('../assets/local/background-j2.png');
-}
-.bg-\[url\(\'\.\.\/assets\/local\/background-j3\.png\'\)\]{
-  background-image: url('../assets/local/background-j3.png');
-}
 .bg-\[url\(\'\.\.\/assets\/pago\/background\.png\'\)\]{
   background-image: url('../assets/pago/background.png');
 }
@@ -1235,6 +1231,18 @@ body{
 }
 .bg-\[url\(\'\.\.\/assets\/pantalla-final\/perdedor\.png\'\)\]{
   background-image: url('../assets/pantalla-final/perdedor.png');
+}
+.bg-\[url\(\'\.\.\/assets\/paquetes\/modelo1\/preview\.png\'\)\]{
+  background-image: url('../assets/paquetes/modelo1/preview.png');
+}
+.bg-\[url\(\'\.\.\/assets\/paquetes\/modelo2\/preview\.png\'\)\]{
+  background-image: url('../assets/paquetes/modelo2/preview.png');
+}
+.bg-\[url\(\'\.\.\/assets\/paquetes\/modelo3\/preview\.png\'\)\]{
+  background-image: url('../assets/paquetes/modelo3/preview.png');
+}
+.bg-\[url\(\'\.\.\/assets\/paquetes\/modelo4\/preview\.png\'\)\]{
+  background-image: url('../assets/paquetes/modelo4/preview.png');
 }
 .bg-\[url\(\'\.\.\/assets\/partida\/background\.png\'\)\]{
   background-image: url('../assets/partida/background.png');

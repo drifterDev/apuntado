@@ -12,7 +12,7 @@ ganar.addEventListener('click', () => {
   window.location.href = 'ganador-local.html'
 })
 
-const color = localStorage.getItem('color') ?? 'red'
-cartas.classList.add(`bg-${color}-400`)
-mazo.classList.add(`bg-${color}-400`)
-sobrantes.classList.add(`bg-${color}-400`)
+const modelo = localStorage.getItem('modelo') ?? 'modelo4'
+cartas.style.backgroundImage = `url(./assets/paquetes/${modelo}/baraja.png)`
+mazo.style.backgroundImage = `url(./assets/paquetes/${modelo}/mazo.png)`
+sobrantes.style.backgroundImage = `url(./assets/paquetes/${modelo}/descartada.png)`

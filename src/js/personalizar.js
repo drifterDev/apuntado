@@ -2,8 +2,9 @@ const avanzar = document.getElementById('avanzar')
 const radios = document.getElementsByName('modelo')
 const imagen = document.getElementById('imagen')
 
-const colors = ['red', 'blue', 'green', 'yellow']
-let prev = ''
+if (localStorage.getItem('modelo') !== null){
+  imagen.src = `./assets/paquetes/${localStorage.getItem('modelo')}/preview.png`
+}
 
 radios.forEach((radio) => {
   radio.addEventListener('change', () => {
@@ -30,12 +31,6 @@ avanzar.addEventListener('click', () => {
 })
 
 function cambiarModelo(modelo){
-  let color = colors[modelo.split('modelo')[1]-1]
-  if (prev !== ''){
-    imagen.classList.remove(`bg-${prev}-400`)
-  }
-  imagen.classList.add(`bg-${color}-400`)
-  prev = color
+  imagen.src = `./assets/paquetes/${modelo}/preview.png`
   localStorage.setItem('modelo', modelo)
-  localStorage.setItem('color', color)
 }
