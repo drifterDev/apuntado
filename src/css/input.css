@@ -1,57 +1,622 @@
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/*
+! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
+*/
 
-@layer base{
-  body{
-    font-family: 'Carter One'; 
-  }
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
 }
 
-@layer components{
-  .fondo{
-    @apply bg-cover bg-no-repeat;
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+*/
+
+html {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-feature-settings: normal; /* 5 */
+  font-variation-settings: normal; /* 6 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-feature-settings: inherit; /* 1 */
+  font-variation-settings: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
+}
+
+body{
+    font-family: 'Carter One'; 
   }
 
-  .opcion-menu-1{
-    @apply mt-4 imagen h-12 seleccionable;
-  }
+*, ::before, ::after{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
 
-  .imagen{
-    @apply bg-contain bg-no-repeat;
-  }
-
-  .seleccionable{
-    @apply hover:scale-110 cursor-pointer transition-all;
-  }
-
-  .flecha{
-    @apply w-[66px] h-[66px] imagen seleccionable;
-  }
-
-  .botones-pago{
-    @apply w-72 h-16 seleccionable imagen;
-  }
-
-  .botones-tienda{
-    @apply w-[150px] h-[150px] seleccionable imagen;
-  }
-
-  .botones-tokens{
-    @apply w-[421px] h-[299px] seleccionable imagen;
-  }
-
-  .boton1-iniciar-sesion{
-    @apply absolute top-0 w-[319px] h-[65px] imagen;
-  }
-
-  .boton2-iniciar-sesion{
-    @apply absolute top-4 w-[280px] h-[56px] imagen;
-  }
-
-  .entrada{
+::backdrop{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+.fondo{
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.opcion-menu-1{
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.opcion-menu-1:hover{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.opcion-menu-1{
+  margin-top: 1rem;
+  height: 3rem;
+}
+.imagen{
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.seleccionable{
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.seleccionable:hover{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.flecha{
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.flecha:hover{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.flecha{
+  height: 66px;
+  width: 66px;
+}
+.botones-pago{
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.botones-pago:hover{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.botones-pago{
+  height: 4rem;
+  width: 18rem;
+}
+.botones-tienda{
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.botones-tienda:hover{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.botones-tienda{
+  height: 150px;
+  width: 150px;
+}
+.botones-tokens{
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.botones-tokens:hover{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.botones-tokens{
+  height: 299px;
+  width: 421px;
+}
+.boton1-iniciar-sesion{
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  height: 65px;
+  width: 319px;
+}
+.boton2-iniciar-sesion{
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 1rem;
+  height: 56px;
+  width: 280px;
+}
+.entrada{
     stroke-width: 4px;
     stroke: #000;
     background: white;
@@ -66,52 +631,687 @@
     line-height: normal;
     text-transform: uppercase;
   }
-
-  .flecha-local{
-    @apply absolute left-96 bg-[url('../assets/general/flecha-2.png')] flecha;
+.flecha-local{
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.flecha-local:hover{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.flecha-local{
+  height: 66px;
+  width: 66px;
+  position: absolute;
+  left: 24rem;
+  background-image: url('../assets/general/flecha-2.png');
+}
+.entrada-local{
+    stroke-width: 4px;
+    stroke: #000;
+    background: white;
+    border-radius: 20px;
+    border: 5px solid black;
+    padding: 0px 10px;
+    opacity: 0.3; 
+    color: black;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    height: 60px;
+    width: 426px;
   }
+.boton-perfil{
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.boton-perfil:hover{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.boton-perfil{
+  margin-right: 8rem;
+  height: 60px;
+  width: 369px;
+}
+.input-radio{
+  position: absolute;
+  top: 0px;
+  z-index: 20;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  opacity: 0;
+}
+.label-radio{
+  position: absolute;
+  top: 0px;
+  z-index: -10;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(117 153 72 / var(--tw-bg-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.input-radio2{
+  position: absolute;
+  top: 0px;
+  z-index: 20;
+  height: 60px;
+  width: 262px;
+  cursor: pointer;
+  opacity: 0;
+}
+.label-radio2{
+  position: absolute;
+  top: 0px;
+  z-index: -10;
+  display: flex;
+  height: 60px;
+  width: 262px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(117 153 72 / var(--tw-bg-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.centrar{
+  right: 0px;
+  left: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modelo{
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.modelo:hover{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.modelo{
+  display: block;
+  height: 120px;
+  width: 160px;
+  cursor: pointer;
+}
+.boton-partida{
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.boton-partida:hover{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.boton-partida{
+  position: absolute;
+  right: 2.5rem;
+  height: 220px;
+  width: 65px;
+}
+.jugadores-partida{
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 10rem;
+  height: 78px;
+  width: 398px;
+}
+.mazo-sobra{
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.mazo-sobra:hover{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.mazo-sobra{
+  height: 240px;
+}
+.absolute{
+  position: absolute;
+}
+.relative{
+  position: relative;
+}
+.left-0{
+  left: 0px;
+}
+.left-10{
+  left: 2.5rem;
+}
+.left-14{
+  left: 3.5rem;
+}
+.left-3{
+  left: 0.75rem;
+}
+.left-5{
+  left: 1.25rem;
+}
+.left-\[450px\]{
+  left: 450px;
+}
+.right-0{
+  right: 0px;
+}
+.right-14{
+  right: 3.5rem;
+}
+.right-7{
+  right: 1.75rem;
+}
+.right-\[450px\]{
+  right: 450px;
+}
+.top-0{
+  top: 0px;
+}
+.top-10{
+  top: 2.5rem;
+}
+.top-16{
+  top: 4rem;
+}
+.top-2{
+  top: 0.5rem;
+}
+.top-28{
+  top: 7rem;
+}
+.top-32{
+  top: 8rem;
+}
+.top-48{
+  top: 12rem;
+}
+.top-56{
+  top: 14rem;
+}
+.top-64{
+  top: 16rem;
+}
+.top-72{
+  top: 18rem;
+}
+.top-80{
+  top: 20rem;
+}
+.top-\[150px\]{
+  top: 150px;
+}
+.top-\[155px\]{
+  top: 155px;
+}
+.top-\[250px\]{
+  top: 250px;
+}
+.top-\[345px\]{
+  top: 345px;
+}
+.top-\[380px\]{
+  top: 380px;
+}
+.top-\[430px\]{
+  top: 430px;
+}
+.top-\[440px\]{
+  top: 440px;
+}
+.top-\[480px\]{
+  top: 480px;
+}
+.top-\[500px\]{
+  top: 500px;
+}
+.top-\[520px\]{
+  top: 520px;
+}
+.-z-10{
+  z-index: -10;
+}
+.z-30{
+  z-index: 30;
+}
+.m-10{
+  margin: 2.5rem;
+}
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+.ml-20{
+  margin-left: 5rem;
+}
+.ml-28{
+  margin-left: 7rem;
+}
+.ml-36{
+  margin-left: 9rem;
+}
+.ml-8{
+  margin-left: 2rem;
+}
+.mt-20{
+  margin-top: 5rem;
+}
+.mt-24{
+  margin-top: 6rem;
+}
+.mt-28{
+  margin-top: 7rem;
+}
+.mt-3{
+  margin-top: 0.75rem;
+}
+.mt-36{
+  margin-top: 9rem;
+}
+.mt-4{
+  margin-top: 1rem;
+}
+.mt-40{
+  margin-top: 10rem;
+}
+.mt-44{
+  margin-top: 11rem;
+}
+.mt-48{
+  margin-top: 12rem;
+}
+.mt-52{
+  margin-top: 13rem;
+}
+.mt-64{
+  margin-top: 16rem;
+}
+.mt-72{
+  margin-top: 18rem;
+}
+.flex{
+  display: flex;
+}
+.grid{
+  display: grid;
+}
+.hidden{
+  display: none;
+}
+.h-16{
+  height: 4rem;
+}
+.h-32{
+  height: 8rem;
+}
+.h-\[100px\]{
+  height: 100px;
+}
+.h-\[124px\]{
+  height: 124px;
+}
+.h-\[240px\]{
+  height: 240px;
+}
+.h-\[310px\]{
+  height: 310px;
+}
+.h-\[320px\]{
+  height: 320px;
+}
+.h-\[377px\]{
+  height: 377px;
+}
+.h-\[40px\]{
+  height: 40px;
+}
+.h-\[49px\]{
+  height: 49px;
+}
+.h-\[50px\]{
+  height: 50px;
+}
+.h-\[60px\]{
+  height: 60px;
+}
+.h-\[74px\]{
+  height: 74px;
+}
+.w-64{
+  width: 16rem;
+}
+.w-\[1055px\]{
+  width: 1055px;
+}
+.w-\[124px\]{
+  width: 124px;
+}
+.w-\[155px\]{
+  width: 155px;
+}
+.w-\[159px\]{
+  width: 159px;
+}
+.w-\[172px\]{
+  width: 172px;
+}
+.w-\[184px\]{
+  width: 184px;
+}
+.w-\[190px\]{
+  width: 190px;
+}
+.w-\[219px\]{
+  width: 219px;
+}
+.w-\[258px\]{
+  width: 258px;
+}
+.w-\[307px\]{
+  width: 307px;
+}
+.w-\[320px\]{
+  width: 320px;
+}
+.w-\[364px\]{
+  width: 364px;
+}
+.w-\[373px\]{
+  width: 373px;
+}
+.w-\[380px\]{
+  width: 380px;
+}
+.w-\[398px\]{
+  width: 398px;
+}
+.w-\[40px\]{
+  width: 40px;
+}
+.w-\[484px\]{
+  width: 484px;
+}
+.w-\[50px\]{
+  width: 50px;
+}
+.w-\[538px\]{
+  width: 538px;
+}
+.w-\[580px\]{
+  width: 580px;
+}
+.w-\[594px\]{
+  width: 594px;
+}
+.w-\[600px\]{
+  width: 600px;
+}
+.w-\[620px\]{
+  width: 620px;
+}
+.w-\[700px\]{
+  width: 700px;
+}
+.w-\[880px\]{
+  width: 880px;
+}
+.w-\[990px\]{
+  width: 990px;
+}
+.w-full{
+  width: 100%;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.flex-col{
+  flex-direction: column;
+}
+.content-between{
+  align-content: space-between;
+}
+.items-center{
+  align-items: center;
+}
+.justify-start{
+  justify-content: flex-start;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.gap-10{
+  gap: 2.5rem;
+}
+.self-start{
+  align-self: flex-start;
+}
+.overflow-hidden{
+  overflow: hidden;
+}
+.bg-\[url\(\'\.\.\/assets\/advertencia\/background\.png\'\)\]{
+  background-image: url('../assets/advertencia/background.png');
+}
+.bg-\[url\(\'\.\.\/assets\/compra-tokens\/background\.png\'\)\]{
+  background-image: url('../assets/compra-tokens/background.png');
+}
+.bg-\[url\(\'\.\.\/assets\/compra-tokens\/paquete1\.png\'\)\]{
+  background-image: url('../assets/compra-tokens/paquete1.png');
+}
+.bg-\[url\(\'\.\.\/assets\/compra-tokens\/paquete2\.png\'\)\]{
+  background-image: url('../assets/compra-tokens/paquete2.png');
+}
+.bg-\[url\(\'\.\.\/assets\/compra-tokens\/paquete3\.png\'\)\]{
+  background-image: url('../assets/compra-tokens/paquete3.png');
+}
+.bg-\[url\(\'\.\.\/assets\/configuracion-bot\/background\.png\'\)\]{
+  background-image: url('../assets/configuracion-bot/background.png');
+}
+.bg-\[url\(\'\.\.\/assets\/configuracion-bot\/titulo\.png\'\)\]{
+  background-image: url('../assets/configuracion-bot/titulo.png');
+}
+.bg-\[url\(\'\.\.\/assets\/configuracion-partida\/background\.png\'\)\]{
+  background-image: url('../assets/configuracion-partida/background.png');
+}
+.bg-\[url\(\'\.\.\/assets\/configuracion-partida\/borde\.png\'\)\]{
+  background-image: url('../assets/configuracion-partida/borde.png');
+}
+.bg-\[url\(\'\.\.\/assets\/configuracion-partida\/check\.png\'\)\]{
+  background-image: url('../assets/configuracion-partida/check.png');
+}
+.bg-\[url\(\'\.\.\/assets\/configuracion-partida\/titulos\.png\'\)\]{
+  background-image: url('../assets/configuracion-partida/titulos.png');
+}
+.bg-\[url\(\'\.\.\/assets\/confirmacion\/continuar\.png\'\)\]{
+  background-image: url('../assets/confirmacion/continuar.png');
+}
+.bg-\[url\(\'\.\.\/assets\/confirmacion\/volver\.png\'\)\]{
+  background-image: url('../assets/confirmacion/volver.png');
+}
+.bg-\[url\(\'\.\.\/assets\/general\/flecha-1\.png\'\)\]{
+  background-image: url('../assets/general/flecha-1.png');
+}
+.bg-\[url\(\'\.\.\/assets\/general\/flecha-2\.png\'\)\]{
+  background-image: url('../assets/general/flecha-2.png');
+}
+.bg-\[url\(\'\.\.\/assets\/index\/ajustes\.png\'\)\]{
+  background-image: url('../assets/index/ajustes.png');
+}
+.bg-\[url\(\'\.\.\/assets\/index\/local\.png\'\)\]{
+  background-image: url('../assets/index/local.png');
+}
+.bg-\[url\(\'\.\.\/assets\/index\/pantalla-principal\.png\'\)\]{
+  background-image: url('../assets/index/pantalla-principal.png');
+}
+.bg-\[url\(\'\.\.\/assets\/index\/perfil\.png\'\)\]{
+  background-image: url('../assets/index/perfil.png');
+}
+.bg-\[url\(\'\.\.\/assets\/index\/personalizar\.png\'\)\]{
+  background-image: url('../assets/index/personalizar.png');
+}
+.bg-\[url\(\'\.\.\/assets\/index\/solitario\.png\'\)\]{
+  background-image: url('../assets/index/solitario.png');
+}
+.bg-\[url\(\'\.\.\/assets\/index\/tienda\.png\'\)\]{
+  background-image: url('../assets/index/tienda.png');
+}
+.bg-\[url\(\'\.\.\/assets\/index\/titulo\.png\'\)\]{
+  background-image: url('../assets/index/titulo.png');
+}
+.bg-\[url\(\'\.\.\/assets\/index\/tokens\.png\'\)\]{
+  background-image: url('../assets/index/tokens.png');
+}
+.bg-\[url\(\'\.\.\/assets\/iniciar-sesion\/background-1\.png\'\)\]{
+  background-image: url('../assets/iniciar-sesion/background-1.png');
+}
+.bg-\[url\(\'\.\.\/assets\/iniciar-sesion\/background-2\.png\'\)\]{
+  background-image: url('../assets/iniciar-sesion/background-2.png');
+}
+.bg-\[url\(\'\.\.\/assets\/iniciar-sesion\/crear-cuenta\.png\'\)\]{
+  background-image: url('../assets/iniciar-sesion/crear-cuenta.png');
+}
+.bg-\[url\(\'\.\.\/assets\/iniciar-sesion\/cuadro\.png\'\)\]{
+  background-image: url('../assets/iniciar-sesion/cuadro.png');
+}
+.bg-\[url\(\'\.\.\/assets\/iniciar-sesion\/iniciar-sesion\.png\'\)\]{
+  background-image: url('../assets/iniciar-sesion/iniciar-sesion.png');
+}
+.bg-\[url\(\'\.\.\/assets\/local\/background-1\.png\'\)\]{
+  background-image: url('../assets/local/background-1.png');
+}
+.bg-\[url\(\'\.\.\/assets\/pago\/background\.png\'\)\]{
+  background-image: url('../assets/pago/background.png');
+}
+.bg-\[url\(\'\.\.\/assets\/pantalla-final\/ganador-local\.png\'\)\]{
+  background-image: url('../assets/pantalla-final/ganador-local.png');
+}
+.bg-\[url\(\'\.\.\/assets\/pantalla-final\/perdedor\.png\'\)\]{
+  background-image: url('../assets/pantalla-final/perdedor.png');
+}
+.bg-\[url\(\'\.\.\/assets\/paquetes\/modelo1\/preview\.png\'\)\]{
+  background-image: url('../assets/paquetes/modelo1/preview.png');
+}
+.bg-\[url\(\'\.\.\/assets\/paquetes\/modelo2\/preview\.png\'\)\]{
+  background-image: url('../assets/paquetes/modelo2/preview.png');
+}
+.bg-\[url\(\'\.\.\/assets\/paquetes\/modelo3\/preview\.png\'\)\]{
+  background-image: url('../assets/paquetes/modelo3/preview.png');
+}
+.bg-\[url\(\'\.\.\/assets\/paquetes\/modelo4\/preview\.png\'\)\]{
+  background-image: url('../assets/paquetes/modelo4/preview.png');
+}
+.bg-\[url\(\'\.\.\/assets\/partida\/background\.png\'\)\]{
+  background-image: url('../assets/partida/background.png');
+}
+.bg-\[url\(\'\.\.\/assets\/partida\/pasar-turno\.png\'\)\]{
+  background-image: url('../assets/partida/pasar-turno.png');
+}
+.bg-\[url\(\'\.\.\/assets\/partida\/tocar\.png\'\)\]{
+  background-image: url('../assets/partida/tocar.png');
+}
+.bg-\[url\(\'\.\.\/assets\/personalizar\/background\.png\'\)\]{
+  background-image: url('../assets/personalizar/background.png');
+}
+.bg-\[url\(\'\.\.\/assets\/publicidad\/background\.png\'\)\]{
+  background-image: url('../assets/publicidad/background.png');
+}
+.bg-\[url\(\'\.\.\/assets\/publicidad\/boton\.png\'\)\]{
+  background-image: url('../assets/publicidad/boton.png');
+}
+.bg-\[url\(\'\.\.\/assets\/registrarse\/actualizar\.png\'\)\]{
+  background-image: url('../assets/registrarse/actualizar.png');
+}
+.bg-\[url\(\'\.\.\/assets\/registrarse\/background\.png\'\)\]{
+  background-image: url('../assets/registrarse/background.png');
+}
+.bg-\[url\(\'\.\.\/assets\/registrarse\/background2\.png\'\)\]{
+  background-image: url('../assets/registrarse/background2.png');
+}
+.bg-\[url\(\'\.\.\/assets\/registrarse\/registrarse\.png\'\)\]{
+  background-image: url('../assets/registrarse/registrarse.png');
+}
+.bg-\[url\(\'\.\.\/assets\/tienda\/background\.png\'\)\]{
+  background-image: url('../assets/tienda/background.png');
+}
+.bg-\[url\(\'\.\.\/assets\/tienda\/boton-1\.png\'\)\]{
+  background-image: url('../assets/tienda/boton-1.png');
+}
+.bg-\[url\(\'\.\.\/assets\/tienda\/boton-2\.png\'\)\]{
+  background-image: url('../assets/tienda/boton-2.png');
+}
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.pt-20{
+  padding-top: 5rem;
+}
+.text-center{
+  text-align: center;
+}
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.opacity-0{
+  opacity: 0;
+}
 
-  .entrada-local{
-    @apply entrada w-[426px] h-[60px] mt-8;
-  }
+.peer:checked ~ .peer-checked\:block{
+  display: block;
+}
 
-  .boton-perfil{
-    @apply mr-32 seleccionable imagen w-[369px] h-[60px];
-  }
+.peer:checked ~ .peer-checked\:bg-\[\#B1CA90\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(177 202 144 / var(--tw-bg-opacity));
+}
 
-  .input-radio{
-    @apply absolute top-0 z-20 opacity-0 cursor-pointer w-[60px] h-[60px];
-  }
-
-  .label-radio{
-    @apply transition-all absolute top-0 -z-10 w-[60px] h-[60px] bg-[#759948] border-black border-2 rounded-2xl flex items-center justify-center;
-  }
-
-  .input-radio2{
-    @apply absolute top-0 z-20 opacity-0 cursor-pointer w-[262px] h-[60px];
-  }
-
-  .label-radio2{
-    @apply transition-all absolute top-0 -z-10 w-[262px] h-[60px] bg-[#759948] border-black border-2 rounded-2xl flex items-center justify-center;
-  }
-
-  .centrar{
-    @apply right-0 left-0 mx-auto;
-  }
-
-  .modelo{
-    @apply seleccionable cursor-pointer w-[160px] h-[120px] block imagen;
-  }
-
-  .boton-partida{
-    @apply imagen seleccionable absolute right-10 w-[65px] h-[220px];
-  }
-
-  .jugadores-partida{
-    @apply absolute right-40 imagen w-[398px] h-[78px];
-  }
-
-  .mazo-sobra{
-    @apply h-[240px] imagen seleccionable;
-  }
+.peer:hover ~ .peer-hover\:scale-110{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
