@@ -16,14 +16,23 @@ La idea de este proyecto es practicar el uso de Tailwind CSS y JavaScript para c
 
 ## Instalación
 
-1. Instala las dependencias del proyecto:
+1. El proyecto ya esta listo para ser usado. Todo comienza con el archivo `index.html`. Abre el archivo en tu navegador y explora la maquetación web del juego de apuntado. Sin embargo, si deseas modificar los archivos del proyecto, continua con los siguientes pasos (Ten en cuenta los assets de la carpeta `src/assets` si vas a continuar con la modificación de los archivos).
+
+1. El proyecto ya cuenta con los archivos minimizados de HTML, JavaScript y CSS. Sin embargo, si deseas modificar los archivos CSS, debes instalar las dependencias del proyecto:
 
    ```bash
    npm install
    ```
-2. Abre el archivo `index.html` en tu navegador.
 
-3. Si tienes problemas con el cargado de los archivos CSS o con la funcionalidad del juego, prueba instalando la extensión [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) en Visual Studio Code y ejecuta el archivo `index.html` con Live Server.
+2. Luego, compila los archivos CSS con el siguiente comando:
+
+   ```bash
+   npm run dev
+   ```
+
+3. Abre el archivo `sin-minimizar/index.html` en tu navegador.
+
+4. Si tienes problemas con el cargado de los archivos CSS o con la funcionalidad del juego, prueba instalando la extensión [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) en Visual Studio Code y ejecuta el archivo `sin-minimizar/index.html` con Live Server.
 
 ### Prerrequisitos 
 
