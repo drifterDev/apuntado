@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apuntado</title>
+  <link href="./css/output.css" rel="stylesheet">
+</head>
+<body class="relative fondo">
+  <div id="avanzar" class="absolute top-[520px] right-0 left-0 mx-auto bg-[url('../assets/general/flecha-2.png')] flecha"></div>
+  <div class="absolute left-0 right-0 mx-auto w-64 flex flex-col items-center">
+    <input type="text" name="password" id="password" class="entrada-local mt-40">
+    <div name="contrasena" class="top-[155px] flecha-local hidden"></div>
+    <input type="text" name="password" id="password2" class="entrada-local hidden">
+    <div name="contrasena" class="top-[250px] flecha-local hidden"></div>
+    <input type="text" name="password" id="password3" class="entrada-local hidden">
+    <div name="contrasena" class="top-[345px] flecha-local hidden"></div>
+    <input type="text" name="password" id="password4" class="entrada-local hidden">
+    <div name="contrasena" class="top-[430px] flecha-local hidden"></div>
+  </div>
+  <script src="./js/jugadores.js"></script>
+  <script>
+    const fondo = document.querySelector('.fondo');
+    const value = localStorage.getItem('jugadores') ?? '4';
+    fondo.style.backgroundImage = `url('./assets/local/background-j${value}.png')`;
+
+    const campos = document.querySelectorAll('.entrada-local');
+    const flechas = document.querySelectorAll('.flecha-local');
+    for (let i = 1; i <= value; i++){
+      campos[i-1].classList.remove('hidden');
+      flechas[i-1].classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
