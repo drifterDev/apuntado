@@ -13,7 +13,6 @@ ganar.addEventListener('click', () => {
 })
 
 const modelo = localStorage.getItem('modelo') ?? 'modelo4'
-console.log(modelo)
 cartas.style.backgroundImage = `url(./assets/paquetes/${modelo}/baraja.png)`
 mazo.style.backgroundImage = `url(./assets/paquetes/${modelo}/mazo.png)`
 sobrantes.style.backgroundImage = `url(./assets/paquetes/${modelo}/descartada.png)`

@@ -28,9 +28,9 @@ La idea de este proyecto es practicar el uso de Tailwind CSS y JavaScript para c
    npm run build
    ```
   
-3. Abre el archivo `src/index.html` en tu navegador.
+3. Abre el archivo `index.html` en tu navegador.
 
-4. Si tienes problemas con el cargado de los archivos CSS o con la funcionalidad del juego, prueba instalando la extensión [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) en Visual Studio Code y ejecuta el archivo `src/index.html` con Live Server.
+4. Si tienes problemas con el cargado de los archivos CSS o con la funcionalidad del juego, prueba instalando la extensión [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) en Visual Studio Code y ejecuta el archivo `index.html` con Live Server.
 
 ### Prerrequisitos 
 
