@@ -2,6 +2,8 @@
 
 La idea de este proyecto es practicar el uso de Tailwind CSS y JavaScript para crear una maquetación web de un juego de cartas llamado "Apuntado". El proyecto es una parte de la entrega final de la materia desarrollo de software, en la cual se solicito un prototipo de un juego de cartas.
 
+Este proyecto solo es un prototipo de la maquetación web del juego, por lo que no incluye la funcionalidad del juego. La maquetación no cuenta con un diseño responsivo, por lo que no se garantiza que se visualice correctamente. Tambien cabe aclarar que el proyecto puede presentar fallas de rendimiento debido a que no se ha optimizado el código debido al poco tiempo que se tuvo para realizarlo.
+
 ## Vista previa
 
 <img src="./preview.png">
